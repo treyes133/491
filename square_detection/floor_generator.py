@@ -1,6 +1,6 @@
 import pygame,math,random
 
-square_size = 37
+square_size = 77
 map_length = 9000
 map_height = 1500
 
