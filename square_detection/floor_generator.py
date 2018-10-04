@@ -1,6 +1,6 @@
 import pygame,math,random
 
-square_size = 30
+square_size = 37
 map_length = 9000
 map_height = 1500
 
@@ -20,6 +20,6 @@ for x in range(0,map_length,square_size):
             pygame.draw.rect(screen, (0,0,0), (x,y,square_size,square_size))
             #print(x,y)
 pygame.display.flip()
-pygame.image.save(screen,"test.png")
+pygame.image.save(screen,"floor"+str(square_size)+".png")
 pygame.display.quit()
 pygame.quit()
