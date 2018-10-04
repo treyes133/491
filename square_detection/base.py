@@ -1,10 +1,13 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import time
 
-#input_image = "live images\\lsla\\3.jpg"
-#input_image = "live images\\msla\\3.jpg"
-input_image = "live images\\ssla\\1.jpg"
+time_start = time.time()
+
+#input_image = "live images\\lsla\\1.jpg"
+input_image = "live images\\msla\\2.jpg"
+#input_image = "live images\\ssla\\1.jpg"
 img = cv2.imread(input_image)
 rows,cols,ch = img.shape
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -37,13 +40,14 @@ for line in lines:
     for x1,y1,x2,y2 in line:
         cv2.line(line_image,(x1,y1),(x2,y2),(255,0,0),5)
         if y1 > rows-distance or y2 > rows-distance:
-            print(abs((y2-y1)/(x2-x1)))
-            if (x2 != 0 and x1 != 0) and abs((y2-y1)/(x2-x1)) > slope_ignore:
-                if y1 > y2:
-                    starting_lines.append([x1,y1,x2,y2])
-                else:
-                    starting_lines.append([x2,y2,x1,y1])
-print(starting_lines)
+            #print(abs((y2-y1)/(x2-x1)))
+            if (x2 != 0 and x1 != 0):
+                if abs((y2-y1)/(x2-x1)) > slope_ignore:
+                    if y1 > y2:
+                        starting_lines.append([x1,y1,x2,y2])
+                    else:
+                        starting_lines.append([x2,y2,x1,y1])
+#print(starting_lines)
 max_distance = 0
 l1 = None
 l2 = None
@@ -88,6 +92,12 @@ dst = cv2.warpPerspective(img,M,(1000,1000))
 
 cv2.line(img,(l1[0],l1[1]),(x3_1,max_height),(255,0,0),5)
 cv2.line(img,(l2[0],l2[1]),(x3_2,max_height),(255,0,0),5)
+
+time_stop = time.time()
+
+td = time_stop-time_start
+
+print("Time :: ",td)
 
 plt.subplot(221),plt.imshow(img),plt.title('Input')
 plt.subplot(222),plt.imshow(edges),plt.title('Edge Detection')
