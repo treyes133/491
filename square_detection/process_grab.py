@@ -206,17 +206,20 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
 
     #cv.imshow('Detection zone', floor_img)
     cv.imwrite('detect.png',floor_img)
-                    
+
+
 
 if __name__ == '__main__':
     from glob import glob
-    for fn in glob('grab6.png'):
+    for fn in glob('grab.png'):
         time1 = time.time()
         img = cv.imread(fn)
-        blur = cv.blur(img,(30,30))
+        #level = 70
+        #blur = cv.blur(img,(level,math.floor(level/10)))
         #cv.imshow('blur', blur)
+        #cv.imwrite('blur'+str(level)+'.png',blur)
         #sys.exit(1)
-        img = blur
+        #img = blur
         squares = find_squares(img)
         min_length = 3000
         min_line = None
@@ -257,9 +260,9 @@ if __name__ == '__main__':
         line_size = percentile*(max(line_len)-min(line_len))+statistics.mean(line_len)
         print("line_size",line_size)
         
-        #est_square_len = smaller_lines/count
+        est_square_len = smaller_lines/count
 
-        est_square_len = int(line_size)
+        #est_square_len = int(line_size)
 
         time2 = time.time()
         print("Time to find squares ::",str(time2-time1))
@@ -283,7 +286,7 @@ if __name__ == '__main__':
         time4 = time.time()
         print("Time to get grab matrix values ::",str(time4-time3))
 
-        floor_img = cv.imread("floor77.png")
+        floor_img = cv.imread("floor35.png")
 
 
         floor_matrix = get_array(floor_img,square_size,[0,0])

@@ -87,8 +87,12 @@ pts1 = np.float32([[line1[2],line1[3]],[line2[2],line2[3]],[line1[0],line1[1]],[
 pts2 = np.float32([[0,0],[1000,0],[0,1000],[1000,1000]])
 
 M = cv2.getPerspectiveTransform(pts1,pts2)
+print(M)
 
 dst = cv2.warpPerspective(img,M,(1000,1000))
+
+M2 = cv2.getPerspectiveTransform(pts2,pts1)
+reverse = cv2.warpPerspective(img,M2,(1000,1000))
 
 cv2.line(img,(l1[0],l1[1]),(x3_1,max_height),(255,0,0),5)
 cv2.line(img,(l2[0],l2[1]),(x3_2,max_height),(255,0,0),5)
@@ -99,9 +103,10 @@ td = time_stop-time_start
 
 print("Time :: ",td)
 
-plt.subplot(221),plt.imshow(img),plt.title('Input')
-plt.subplot(222),plt.imshow(edges),plt.title('Edge Detection')
-plt.subplot(223),plt.imshow(line_image),plt.title('Line Detection')
-plt.subplot(224),plt.imshow(dst),plt.title('Output')
+plt.subplot(321),plt.imshow(img),plt.title('Input')
+plt.subplot(322),plt.imshow(edges),plt.title('Edge Detection')
+plt.subplot(323),plt.imshow(line_image),plt.title('Line Detection')
+plt.subplot(324),plt.imshow(dst),plt.title('Output')
+plt.subplot(325),plt.imshow(reverse),plt.title('Reversed')
 
 plt.show()

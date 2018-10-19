@@ -1,8 +1,8 @@
 import pygame,math,random
 
-square_size = 77
-map_length = 9000
-map_height = 1500
+square_size = 150
+map_length = 3500
+map_height = 15000
 
 squares_length = math.floor(map_length/square_size)
 squares_height = math.floor(map_height/square_size)
