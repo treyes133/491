@@ -51,14 +51,15 @@ def exact_size(img,est_square_len):
         low_threshold = x
         high_threshold = x+50
         edges = cv.Canny(blur_gray, low_threshold, high_threshold)
-        
+       
         indices = np.where(edges != [0])
         coordinates = zip(indices[0], indices[1])
         index_array = []
         for x,y in coordinates:
             index_array.append([x,y])
-        
+        #print("L",low_threshold," H",high_threshold,"len index array",len(index_array))
         if last != 0 and len(index_array) == 0:
+            
             low_threshold = x-3
             high_threshold = x+50-3
             edges = cv.Canny(blur_gray, low_threshold, high_threshold)
@@ -67,20 +68,22 @@ def exact_size(img,est_square_len):
             coordinates = zip(indices[0], indices[1])
             for x,y in coordinates:
                 index_array.append([x,y])
+            if len(index_array) > 400:
+                raise ValueError('Index length too high')
             break
         last = len(index_array)
     #cv.imshow('edges', edges)
-    #print("L",low_threshold," H",high_threshold,"len index array",len(index_array))
+    
 
     
     distances = []
-    ignore_range = int(est_square_len*0.5)
+    ignore_range = int(est_square_len*0.75)
     est_square_len_upper = int(est_square_len*1.5)
     variance = ignore_range
     for x,y in index_array:
         if starting_point is None:
             starting_point = x,y
-            print("running line algorithm")
+            #print("running line algorithm")
         for x2,y2 in index_array:
             if x2 not in range (x-ignore_range,x+ignore_range): 
                 if (x2 in range(x+ignore_range,x+est_square_len_upper) or x2 in range(x-est_square_len_upper,x-ignore_range)) and y2 in range(y-variance,y+variance):
@@ -210,12 +213,17 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
 
 if __name__ == '__main__':
     from glob import glob
-    for fn in glob('grab6.png'):
+    for fn in glob('grab1.png'):
         time1 = time.time()
         img = cv.imread(fn)
-        blur = cv.blur(img,(30,30))
-        #cv.imshow('blur', blur)
-        #sys.exit(1)
+        kernel = 71
+        blur = cv.GaussianBlur(img,(kernel,kernel),0)
+        cv.imshow('blur', blur)
+
+        unblur = cv.bilateralFilter(blur,5,100,100)
+        
+        cv.imshow('unblur', unblur)
+        sys.exit(1)
         img = blur
         squares = find_squares(img)
         min_length = 3000
@@ -253,13 +261,13 @@ if __name__ == '__main__':
                 smaller_lines += distance
                 count += 1
         print(str(smaller_lines/count))
-        percentile = 0.5
-        line_size = percentile*(max(line_len)-min(line_len))+statistics.mean(line_len)
-        print("line_size",line_size)
+        #percentile = 0.5
+        #line_size = percentile*(max(line_len)-min(line_len))+statistics.mean(line_len)
+        #print("line_size",line_size)
         
-        #est_square_len = smaller_lines/count
+        est_square_len = smaller_lines/count
 
-        est_square_len = int(line_size)
+        #est_square_len = int(line_size)
 
         time2 = time.time()
         print("Time to find squares ::",str(time2-time1))
@@ -272,7 +280,7 @@ if __name__ == '__main__':
         try:
             square_size,starting_point = exact_size(img,est_square_len)
         except:
-            square_size = est_square_len
+            square_size = int(est_square_len)
             starting_point = [0,0]
         time3 = time.time()
         print("Time to find square length ::",str(time3-time2))
@@ -283,7 +291,7 @@ if __name__ == '__main__':
         time4 = time.time()
         print("Time to get grab matrix values ::",str(time4-time3))
 
-        floor_img = cv.imread("floor77.png")
+        floor_img = cv.imread("floor100.png")
 
 
         floor_matrix = get_array(floor_img,square_size,[0,0])
