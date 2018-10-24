@@ -1,9 +1,4 @@
 import sys,math,statistics,time
-PY3 = sys.version_info[0] == 3
-
-if PY3:
-    xrange = range
-
 import numpy as np
 import cv2 as cv
 
@@ -211,7 +206,7 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
 
 if __name__ == '__main__':
     from glob import glob
-    for fn in glob('grab.png'):
+    for fn in glob('output100.png'):
         time1 = time.time()
         img = cv.imread(fn)
         #level = 70
@@ -220,49 +215,49 @@ if __name__ == '__main__':
         #cv.imwrite('blur'+str(level)+'.png',blur)
         #sys.exit(1)
         #img = blur
-        squares = find_squares(img)
-        min_length = 3000
-        min_line = None
-        line_len = []
-        for square in squares:
-            x1,y1 = square[0]
-            x2,y2 = square[1]
-            x3,y3 = square[2]
-            x4,y4 = square[3]
+        #squares = find_squares(img)
+        #min_length = 3000
+        #min_line = None
+        #line_len = []
+        ##for square in squares:
+        #    x1,y1 = square[0]
+        #    x2,y2 = square[1]
+        #    x3,y3 = square[2]
+        #    x4,y4 = square[3]
 
-            twoto1 = math.sqrt(pow(y2-y1,2)+pow(x2-x1,2))
-            threeto1 = math.sqrt(pow(y3-y1,2)+pow(x3-x1,2))
-            fourto1 = math.sqrt(pow(y4-y1,2)+pow(x4-x1,2))
+        #    twoto1 = math.sqrt(pow(y2-y1,2)+pow(x2-x1,2))
+        #    threeto1 = math.sqrt(pow(y3-y1,2)+pow(x3-x1,2))
+        #    fourto1 = math.sqrt(pow(y4-y1,2)+pow(x4-x1,2))
             
-            line_len.append(twoto1)
-            line_len.append(threeto1)
-            line_len.append(fourto1)
-            if(twoto1 < min_length):
-                min_length = twoto1
-                min_line = [x1,y1,x2,y2]
+        #    line_len.append(twoto1)
+        #    line_len.append(threeto1)
+        #    line_len.append(fourto1)
+        #    if(twoto1 < min_length):
+        ##        min_length = twoto1
+         #       min_line = [x1,y1,x2,y2]
                 
-            if(threeto1 < min_length):
-                min_length = threeto1
-                min_line = [x1,y1,x3,y3]
-            if(fourto1 < min_length):
-                min_length = fourto1
-                min_line = [x1,y1,x4,y4]
-        range_values = min_length*0.5
+         #   if(threeto1 < min_length):
+         #       min_length = threeto1
+          #      min_line = [x1,y1,x3,y3]
+          #  if(fourto1 < min_length):
+          #      min_length = fourto1
+          #      min_line = [x1,y1,x4,y4]
+        #range_values = min_length*0.5
         #print(min_length)
-        smaller_lines = 0
-        count = 0
-        for distance in line_len:
-            if min_length + range_values > distance:
-                smaller_lines += distance
-                count += 1
-        print(str(smaller_lines/count))
-        percentile = 0.5
-        line_size = percentile*(max(line_len)-min(line_len))+statistics.mean(line_len)
-        print("line_size",line_size)
+        #smaller_lines = 0
+        #count = 0
+        #for distance in line_len:
+        #    if min_length + range_values > distance:
+        #        smaller_lines += distance
+        #        count += 1
+        #print(str(smaller_lines/count))
+        #percentile = 0.5
+        #line_size = percentile*(max(line_len)-min(line_len))+statistics.mean(line_len)
+        #print("line_size",line_size)
         
-        est_square_len = smaller_lines/count
+        #est_square_len = smaller_lines/count
 
-        #est_square_len = int(line_size)
+        est_square_len = 150
 
         time2 = time.time()
         print("Time to find squares ::",str(time2-time1))
@@ -286,7 +281,7 @@ if __name__ == '__main__':
         time4 = time.time()
         print("Time to get grab matrix values ::",str(time4-time3))
 
-        floor_img = cv.imread("floor35.png")
+        floor_img = cv.imread("floor150.png")
 
 
         floor_matrix = get_array(floor_img,square_size,[0,0])
