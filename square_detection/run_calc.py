@@ -46,7 +46,7 @@ def find_match(grab_matrix, floor_matrix):
     scores = []
     #print(len(grab_matrix[0]))
     #print(len(grab_matrix))
-    min_score = 10000000
+    min_score = 255*len(grab_matrix)*len(grab_matrix[0])
     min_score_card = None
     min_start_coordinate = [0,0]
     min_floor = []
@@ -61,21 +61,15 @@ def find_match(grab_matrix, floor_matrix):
                     #print("y+yg",y+yg)
 
                     #this could use some tweaking
-                    distance_factor = 1
-                    try:
-                        floor_match_row.append(floor_matrix[x+xg][y+yg])
-                        value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
-                    except:
-                        print("x",str(x))
-                        print("xg",str(xg))
-                        print("x+xg",str(x+xg))
-                        print("Y",str(y))
-                        print("yg",str(yg))
-                        print("Y+yg",str(y+yg))
-                        sys.exit(1)
-                        
+                    if yg <= int(len(grab_matrix[0])/5):
+                        distance_factor = 0.1+(pow(yg,2)/len(grab_matrix[0]))
+                        #print("YG",yg," DF",distance_factor)
+                    else:
+                        distance_factor = 1
                     
-                    #print("value",value)
+                    floor_match_row.append(floor_matrix[x+xg][y+yg])
+                    value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
+                        
                     score.append(value)
                 floor_match.append(floor_match_row)
             if sum(score) < min_score:
@@ -99,21 +93,15 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
 
     x1 = min_location[0]*square_size
     y1 = min_location[1]*square_size
-    print("x1",x1)
-    print("y1",y1)
+    #print("x1",x1)
+    #print("y1",y1)
     x2 = x1+len(matrix_values[0])*square_size+square_size
     y2 = y1+len(matrix_values)*square_size+square_size
-    print("x2",x2)
-    print("y2",y2)
-    
-    cv2.line(floor_img,(x1,y1),(x1,y2),(255,0,0),50)
-    cv2.line(floor_img,(x1,y1),(x2,y1),(255,0,0),50)
-    cv2.line(floor_img,(x1,y2),(x2,y2),(255,0,0),50)
-    cv2.line(floor_img,(x2,y1),(x2,y2),(255,0,0),50)
+    #print("x2",x2)
+    #print("y2",y2)
 
-    time.sleep(0.1)
+    cv2.rectangle(floor_img,(x1,y1),(x2,y2),(255,0,0),50)
 
-    #cv2.imshow('Detection zone', floor_img)
     return floor_img
 
 time_start = time.time()
@@ -216,7 +204,7 @@ for y in range(0,rows,step):
     time4 = time.time()
     #print("Time to get grab matrix values ::",str(time4-time3))
 
-    
+
 
     test_matrix = get_array(corrected,size_grab)
 
@@ -229,19 +217,18 @@ for y in range(0,rows,step):
     time5 = time.time()
     #print("Time to get floor matrix values ::",str(time5-time4))
     #min_score, min_location = find_match(matrix_values, floor_matrix, square_size)
-    time6 = time.time()        
+    time6 = time.time()      
     #print("Time to find match ::",str(time6-time5))
 
     #done = outline_region(min_location,matrix_values,floor_img,square_size)
-
     fig = plt.figure()
     plt.subplot(221),plt.imshow(im_out),plt.title("Input")
-    plt.subplot(222),plt.imshow(out),plt.title("Gaussian additive noise")
-    plt.subplot(223),plt.imshow(corrected),plt.title("Correction")
-    plt.subplot(224),plt.imshow(final_image),plt.title("Location"),plt.xlabel(str(min_score))
+    #plt.subplot(222),plt.imshow(out),plt.title("Gaussian additive noise")
+    plt.subplot(223),plt.imshow(corrected),plt.title("Correction with noise")
+    plt.subplot(144),plt.imshow(final_image),plt.title("Location"),plt.xlabel(str(min_score))
     plt.savefig("run_final/"+str(step_counter)+".png")
     plt.close(fig)
-    del im_out, out, corrected, final_image, fig
+    del im_out, out, corrected, fig, final_image
     step_counter += 1
     gc.collect()
     print("\n")

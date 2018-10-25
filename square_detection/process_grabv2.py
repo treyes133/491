@@ -106,11 +106,13 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
     cv2.line(floor_img,(x2,y1),(x2,y2),(0,255,0),20)
 
     #cv2.imshow('Detection zone', floor_img)
-    cv2.imwrite('detect.png',floor_img)
+    #cv2.imwrite('detect.png',floor_img)
+    return floor_img
 
 
 if __name__ == '__main__':
-    img = cv2.imread("test_image.png")
+    img = cv2.imread("grab.png")
+    img2 = cv2.imread("test_image.png")
     floor = cv2.imread("floor150.png")
 
     size_grab = 10
@@ -123,14 +125,23 @@ if __name__ == '__main__':
 
     #print(test_matrix)
 
-    floor_matrix = get_array(floor,mismatch)
+    #floor_matrix = get_array(floor,mismatch)
 
     #print(floor_matrix)
 
 
-    min_score, min_start_coordinate = find_match(test_matrix,floor_matrix)
+    #min_score, min_start_coordinate = find_match(test_matrix,floor_matrix)
 
-    outline_region(min_start_coordinate,test_matrix,floor,mismatch)
+  #  outline_region(min_start_coordinate,test_matrix,floor,mismatch)
+
+    plt.figure(0)
+
+    plt.subplot(221),plt.imshow(img)
+    #plt.subplot(222),plt.imshow(img2)
+    plt.subplot(223),plt.imshow(img2)
+    plt.subplot(144),plt.imshow(floor)
+    plt.tight_layout()
+    plt.show()
 
 
     #[x,y] = starting_location(input_image)
