@@ -60,12 +60,15 @@ def find_match(grab_matrix, floor_matrix):
                     #print("x+xg",x+xg)
                     #print("y+yg",y+yg)
 
-                    #this could use some tweaking
+                    #this could use some tweaking!!!
                     if yg <= int(len(grab_matrix[0])/5):
-                        distance_factor = 0.1+(pow(yg,2)/len(grab_matrix[0]))
+                        distance_factor = 1
+                        pass
                         #print("YG",yg," DF",distance_factor)
                     else:
-                        distance_factor = 1
+                        distance_factor = 1.1+(len(grab_matrix[0])-pow(yg,2))/len(grab_matrix[0])
+                        pass
+
                     
                     floor_match_row.append(floor_matrix[x+xg][y+yg])
                     value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
