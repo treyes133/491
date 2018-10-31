@@ -13,6 +13,8 @@ input_image = "output100.png"
 img = cv2.imread(input_image)
 rows,cols,ch = img.shape
 
+
+#this set of coordinates works well for the 100 unit sized transformation
 pts1 = np.float32([[int(0.3*cols),int(0.02*rows)],[int(0.68*cols),int(0.02*rows)],[int(0.1*rows),rows],[int(0.85*cols),rows]])
 pts2 = np.float32([[0,0],[200,0],[0,600],[200,600]])
 

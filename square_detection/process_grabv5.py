@@ -10,7 +10,6 @@ class ThreadConverter(threading.Thread):
     size = 0
     finished = False
     exit_cond = False
-    wait_time = 0
     def __init__(self,array,index,size):
         time1 =  time.time()
         threading.Thread.__init__(self)
@@ -30,7 +29,6 @@ class ThreadConverter(threading.Thread):
         for y in range(0,col_max,self.size):        
             count = 0
             sum_colors = 0
-            t1 = time.time()
             for x2 in range(self.index*self.size,(self.index*self.size)+self.size):
                 for y2 in range(y,y+self.size):
                     try:
@@ -42,9 +40,7 @@ class ThreadConverter(threading.Thread):
                         print(x2)
                         print("BREAK")
                         sys.exit(0)
-            t2 = time.time()
             row_matrix.append(float(sum_colors/count))
-            #print("Time",str(t2-t1))
         self.output = row_matrix
         self.finished = True
         time4 = time.time()
@@ -55,65 +51,21 @@ class ThreadConverter(threading.Thread):
             time.sleep(0.001)
             #print("thread",self.index,"has been killed")
         time6 = time.time()
-<<<<<<< HEAD
         #print("wait time",str(time6-time5))
-=======
-        self.wait_time = time6-time5
-        #print(self.index,"wait time",str(time6-time5))
->>>>>>> 2c2c13f00575bba7e5bbaa88576d2e63c33e2f94
     def status(self):
         return self.finished
-
-    
-def ThreadAssign(threading.Thread):
-    concurrent_threads = 0
-    exit_cond = False
-    img = []
-    localization_size = 0
-    finished_matrix = []
-    def __init__(self,concurrent_threads,img,localization_size):
-        threading.Thread.__init__(self)
-        self.concurrent_threads = concurrent_threads
-        self.img = img
-        self.localization_size = localization_size
-        self.current_threads = [None]*self.concurrent_threads
-    def run(self):
-        while not exit_cond:
-            for t in range(0,len(self.current_threads)):
-                found = False
-                for x in range(xmin,len(self.finished_matrix)):
-                    #print("running")
-                    if found:
-                        #print("breaking")
-                        break
-                    if finished_matrix[x] is False:
-                        send_array = []
-                        print("X",x)
-                        #print(current_threads)
-                        #print("new value added")
-                        thread = ThreadConverter(self.img,x,self.localization_size)
-                        current_threads[t] = thread
-                        current_threads[t].start()
-                        found = True
-                        xmin += 1
-    def update(self, fM, cT):
-        self.finished_matrix = fM
-        self.current_threads = cT
+        
 
 def get_array2(img,localization_size):
 
     col_max = int(len(img[0])/localization_size)*localization_size
     row_max = int(len(img)/localization_size)*localization_size
-<<<<<<< HEAD
     #print("col_max",col_max)
     #print("len(img[0])",len(img[0]))
     #print("len(img)",len(img))
     #print("localization_size",localization_size)
-=======
-    print("localization_size",localization_size)
->>>>>>> 2c2c13f00575bba7e5bbaa88576d2e63c33e2f94
     concurrent_threads = 5
-    print("concurrent_threads",concurrent_threads)
+
     thread_rows = 1
 
     total_threads = int(len(img)/(thread_rows*localization_size))
@@ -125,25 +77,19 @@ def get_array2(img,localization_size):
     xmin = 0
 
     finished_matrix = [False]*total_threads
-
-    tA = ThreadAssign(concurrent_threads,img,localization_size)
-    tA.start()
-    
-    wt = []
+    current_threads = [None]*concurrent_threads
     while not all(finished_matrix):
         #print(finished_matrix)
-        for t in range(0,len(current_threads)):
-            tA.update(finished_matrix,current_threads)
+        for x in range(0,len(current_threads)):
             #print("checking for fininshed thread")
-            if current_threads[t] is not None:
-                if current_threads[t].status() is True:
-                    final_array.insert(current_threads[t].index,current_threads[t].output)
-                    current_threads[t].exit_cond = True
-                    finished_matrix[current_threads[t].index] = True
-                    wt.append(current_threads[t].wait_time)
-                    del current_threads[t]
+            if current_threads[x] is not None:
+                if current_threads[x].status() is True:
+                    
+                    final_array.insert(current_threads[x].index,current_threads[x].output)
+                    current_threads[x].exit_cond = True
+                    finished_matrix[current_threads[x].index] = True
+                    del current_threads[x]
                     current_threads.append(None)
-<<<<<<< HEAD
                     #sys.exit(0)
         for t in range(0,len(current_threads)):
             if current_threads[t] is None:
@@ -163,11 +109,6 @@ def get_array2(img,localization_size):
                         current_threads[t].start()
                         found = True
                         xmin += 1
-=======
-                
-    for w in wt:
-        print(w)
->>>>>>> 2c2c13f00575bba7e5bbaa88576d2e63c33e2f94
                         
     return final_array
                 
@@ -184,7 +125,6 @@ def get_array(img,localization_size):
         for y in range(0,col_max,localization_size):
             count = 0
             sum_colors = 0
-            t1 = time.time()
             for x2 in range(x,x+localization_size):
                 if(localization_size != 50):
                     #print("x range:",x,"",x+localization_size)
@@ -198,8 +138,6 @@ def get_array(img,localization_size):
                     sum_colors += rgb
                     count += 1
             row_matrix.append(float(sum_colors/count))
-            t2 = time.time()
-            #print("Time1",str(t2-t1))
             #row_matrix.append(rgb[1])
             #print(row_matrix)
         info_matrix.append(row_matrix)

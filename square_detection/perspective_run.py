@@ -37,6 +37,8 @@ for y in range(0,rows,step):
     y3 = 2200+y1
     y4 = 2200+y2
     theta = 30
+
+    #offset equation that we came up with
     offset = math.sin(math.radians(theta))*((x2-x1)/2)
     #print(offset)
     x3 = x1+offset
