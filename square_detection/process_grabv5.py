@@ -2,7 +2,13 @@ import cv2,sys
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+<<<<<<< HEAD:square_detection/process_grabv4.py
+import threading,time
+
+
+=======
 import threading,time,traceback,statistics
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
 class ThreadConverter(threading.Thread):
     array = []
     output = []
@@ -44,7 +50,7 @@ class ThreadConverter(threading.Thread):
         self.output = row_matrix
         self.finished = True
         time4 = time.time()
-        #print("run time",str(time4-time3))
+        print("run time",str(time4-time3))
         time5 = time.time()            
         while not self.exit_cond:
             #print("DONE")
@@ -60,10 +66,17 @@ def get_array2(img,localization_size):
 
     col_max = int(len(img[0])/localization_size)*localization_size
     row_max = int(len(img)/localization_size)*localization_size
+<<<<<<< HEAD:square_detection/process_grabv4.py
+    print("col_max",col_max)
+    print("len(img[0])",len(img[0]))
+    print("len(img)",len(img))
+    print("localization_size",localization_size)
+=======
     #print("col_max",col_max)
     #print("len(img[0])",len(img[0]))
     #print("len(img)",len(img))
     #print("localization_size",localization_size)
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
     concurrent_threads = 5
 
     thread_rows = 1
@@ -77,6 +90,32 @@ def get_array2(img,localization_size):
     xmin = 0
 
     finished_matrix = [False]*total_threads
+<<<<<<< HEAD:square_detection/process_grabv4.py
+    current_threads = [None]*total_threads
+    for x in range(xmin,len(finished_matrix)):
+        send_array = []
+        print("X",x)
+        #print(current_threads)
+        #print("new value added")
+        time1=time.time()
+        thread = ThreadConverter(img,x,localization_size)
+        current_threads[x] = thread
+        current_threads[x].start()
+        time2=time.time()
+        #print("Time to start thread ::",str(time2-time1))
+        found = True
+        xmin += 1
+    for x in range(0,len(current_threads)):
+        #print("checking for fininshed thread")
+        #if current_threads[x].status() is True:
+        final_array.insert(current_threads[x].index,current_threads[x].output)
+        current_threads[x].exit_cond = True
+        finished_matrix[current_threads[x].index] = True
+            #del current_threads[x]
+            #current_threads.append(None)
+            #sys.exit(0)
+        
+=======
     current_threads = [None]*concurrent_threads
     while not all(finished_matrix):
         #print(finished_matrix)
@@ -109,6 +148,7 @@ def get_array2(img,localization_size):
                         current_threads[t].start()
                         found = True
                         xmin += 1
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
                         
     return final_array
                 
@@ -126,14 +166,7 @@ def get_array(img,localization_size):
             count = 0
             sum_colors = 0
             for x2 in range(x,x+localization_size):
-                if(localization_size != 50):
-                    #print("x range:",x,"",x+localization_size)
-                    pass
                 for y2 in range(y,y+localization_size):
-                    if(localization_size != 50):
-                        #print("y range:",y,"",y+localization_size)
-                        pass
-                    #print("X2:",x2,"Y2:",y2)
                     rgb = img[x2][y2][0]
                     sum_colors += rgb
                     count += 1
@@ -246,7 +279,11 @@ if __name__ == '__main__':
     mismatch = int(150*(float(size_grab/40)))
 
     time1 = time.time()
+<<<<<<< HEAD:square_detection/process_grabv4.py
+    test_matrix = get_array(img2,size_grab)
+=======
     floor_matrix = get_array(floor,mismatch)
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
     time2 = time.time()
 
     print("Total time for first ::",str(time2-time1))
@@ -256,7 +293,11 @@ if __name__ == '__main__':
     time1_diff = []
     time2_diff = []
 
+<<<<<<< HEAD:square_detection/process_grabv4.py
+    floor_matrix = get_array2(img2,size_grab)
+=======
     for x in range(0,100):
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
 
         time_start = time.time()
 
