@@ -155,21 +155,23 @@ def find_match(grab_matrix, floor_matrix):
     min_score_card = None
     min_start_coordinate = [0,0]
     min_floor = []
+    check_count = 0
+    
     for x in range(0,len(floor_matrix)-len(grab_matrix)):
         for y in range(0,len(floor_matrix[0])-len(grab_matrix[0])):
             score = []
             floor_match = []
-            for xg in range(len(grab_matrix)-1,-1,-1):
-                if sum(score) > min_score:
-                    break
+            run = 0
+            exit_cond = False
+            for xg in range(len(grab_matrix)-1,-1,-1):                
                 floor_match_row = []
                 for yg in range(0,len(grab_matrix[0]),1):
                     #print("x+xg",x+xg)
                     #print("yg",yg)
-
                     #this could use some tweaking
                     distance_factor = 1/(yg+1)
                     try:
+                        check_count += 1
                         floor_match_row.append(floor_matrix[x+xg][y+yg])
                         value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
                     except:
@@ -181,16 +183,24 @@ def find_match(grab_matrix, floor_matrix):
                         print("yg",str(yg))
                         print("Y+yg",str(y+yg))
                         sys.exit(1)
-                        
+
+                    
                     
                     #print("value",value)
-                    score.append(value)
+                score.append(value)
+                #if min_score_card != None:
+                #    if score[run] > min_score_card[run] or sum(score) > min_score:
+                #        exit_cond = True
+                #        break
+                #        pass
+                run += 1
                 floor_match.append(floor_match_row)
-            if sum(score) < min_score:
+            if sum(score) < min_score and not exit_cond:
                         min_floor = floor_match
                         min_score = sum(score)
                         min_score_card = score
                         min_start_coordinate = [y,x]
+    #print("check_count",check_count)
             #print(score)
             #print(sum(score))
     #print("min score :: ",min_score)
@@ -263,16 +273,16 @@ if __name__ == '__main__':
         time2_diff.append(time4-time3)
     print(statistics.mean(time1_diff))
     print(statistics.mean(time2_diff))
-  #  outline_region(min_start_coordinate,test_matrix,floor,mismatch)
+    outline_region(min_start_coordinate,test_matrix,floor,mismatch)
 
-    #plt.figure(0)
+    plt.figure(0)
 
-    #plt.subplot(221),plt.imshow(img)
-    #plt.subplot(222),plt.imshow(img2)
-    #plt.subplot(223),plt.imshow(img2)
-    #plt.subplot(144),plt.imshow(floor)
-    #plt.tight_layout()
-    #plt.show()
+    plt.subplot(221),plt.imshow(img)
+    plt.subplot(222),plt.imshow(img2)
+    plt.subplot(223),plt.imshow(img2)
+    plt.subplot(144),plt.imshow(floor)
+    plt.tight_layout()
+    plt.show()
 
 
     #[x,y] = starting_location(input_image)
