@@ -2,9 +2,13 @@ import cv2,sys
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+<<<<<<< HEAD:square_detection/process_grabv4.py
 import threading,time
 
 
+=======
+import threading,time,traceback,statistics
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
 class ThreadConverter(threading.Thread):
     array = []
     output = []
@@ -62,16 +66,23 @@ def get_array2(img,localization_size):
 
     col_max = int(len(img[0])/localization_size)*localization_size
     row_max = int(len(img)/localization_size)*localization_size
+<<<<<<< HEAD:square_detection/process_grabv4.py
     print("col_max",col_max)
     print("len(img[0])",len(img[0]))
     print("len(img)",len(img))
     print("localization_size",localization_size)
+=======
+    #print("col_max",col_max)
+    #print("len(img[0])",len(img[0]))
+    #print("len(img)",len(img))
+    #print("localization_size",localization_size)
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
     concurrent_threads = 5
 
     thread_rows = 1
 
     total_threads = int(len(img)/(thread_rows*localization_size))
-    print(total_threads,"total_threads")
+    #print(total_threads,"total_threads")
 
     #final_array = []*total_threads
     final_array = []
@@ -79,6 +90,7 @@ def get_array2(img,localization_size):
     xmin = 0
 
     finished_matrix = [False]*total_threads
+<<<<<<< HEAD:square_detection/process_grabv4.py
     current_threads = [None]*total_threads
     for x in range(xmin,len(finished_matrix)):
         send_array = []
@@ -103,6 +115,40 @@ def get_array2(img,localization_size):
             #current_threads.append(None)
             #sys.exit(0)
         
+=======
+    current_threads = [None]*concurrent_threads
+    while not all(finished_matrix):
+        #print(finished_matrix)
+        for x in range(0,len(current_threads)):
+            #print("checking for fininshed thread")
+            if current_threads[x] is not None:
+                if current_threads[x].status() is True:
+                    
+                    final_array.insert(current_threads[x].index,current_threads[x].output)
+                    current_threads[x].exit_cond = True
+                    finished_matrix[current_threads[x].index] = True
+                    del current_threads[x]
+                    current_threads.append(None)
+                    #sys.exit(0)
+        for t in range(0,len(current_threads)):
+            if current_threads[t] is None:
+                found = False
+                for x in range(xmin,len(finished_matrix)):
+                    #print("running")
+                    if found:
+                        #print("breaking")
+                        break
+                    if finished_matrix[x] is False:
+                        send_array = []
+                        #print("X",x)
+                        #print(current_threads)
+                        #print("new value added")
+                        thread = ThreadConverter(img,x,localization_size)
+                        current_threads[t] = thread
+                        current_threads[t].start()
+                        found = True
+                        xmin += 1
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
                         
     return final_array
                 
@@ -133,12 +179,12 @@ def get_array(img,localization_size):
     return info_matrix
 
 def find_match(grab_matrix, floor_matrix):
-    print("FIND MATCH")
-    print("----------")
+    #print("FIND MATCH")
+    #print("----------")
     scores = []
     #print(len(grab_matrix[0]))
     #print(len(grab_matrix))
-    min_score = 10000000
+    min_score = 255*len(grab_matrix)*len(grab_matrix[0])
     min_score_card = None
     min_start_coordinate = [0,0]
     min_floor = []
@@ -146,18 +192,21 @@ def find_match(grab_matrix, floor_matrix):
         for y in range(0,len(floor_matrix[0])-len(grab_matrix[0])):
             score = []
             floor_match = []
-            for xg in range(0,len(grab_matrix)):
+            for xg in range(len(grab_matrix)-1,-1,-1):
+                if sum(score) > min_score:
+                    break
                 floor_match_row = []
-                for yg in range(0,len(grab_matrix[0])):
+                for yg in range(0,len(grab_matrix[0]),1):
                     #print("x+xg",x+xg)
-                    #print("y+yg",y+yg)
+                    #print("yg",yg)
 
                     #this could use some tweaking
-                    distance_factor = 1
+                    distance_factor = 1/(yg+1)
                     try:
                         floor_match_row.append(floor_matrix[x+xg][y+yg])
                         value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
                     except:
+                        traceback.print_exc()
                         print("x",str(x))
                         print("xg",str(xg))
                         print("x+xg",str(x+xg))
@@ -177,13 +226,13 @@ def find_match(grab_matrix, floor_matrix):
                         min_start_coordinate = [y,x]
             #print(score)
             #print(sum(score))
-    print("min score :: ",min_score)
-    print("min coordinate :: ",min_start_coordinate)
-    print("Matrix card ")
-    print("-----------")
-    print(min_score_card)
-    print("Matrix match")
-    print(min_floor)
+    #print("min score :: ",min_score)
+    #print("min coordinate :: ",min_start_coordinate)
+    #print("Matrix card ")
+    #print("-----------")
+    #print(min_score_card)
+    #print("Matrix match")
+    #print(min_floor)
 
     return min_score, min_start_coordinate
 
@@ -220,31 +269,41 @@ if __name__ == '__main__':
     mismatch = int(150*(float(size_grab/40)))
 
     time1 = time.time()
+<<<<<<< HEAD:square_detection/process_grabv4.py
     test_matrix = get_array(img2,size_grab)
+=======
+    floor_matrix = get_array(floor,mismatch)
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
     time2 = time.time()
 
     print("Total time for first ::",str(time2-time1))
 
     #print(test_matrix)
 
-    time_start = time.time()
+    time1_diff = []
+    time2_diff = []
 
+<<<<<<< HEAD:square_detection/process_grabv4.py
     floor_matrix = get_array2(img2,size_grab)
+=======
+    for x in range(0,100):
+>>>>>>> ca1fcd6011e2688d5fca957f413fd7342abae341:square_detection/process_grabv5.py
 
-    print(floor_matrix == test_matrix)
+        time_start = time.time()
 
-    time_stop = time.time()
-
-    print("Total time for second ::",str(time_stop-time_start))
+        test_matrix = get_array2(img2,size_grab)
 
 
-    #print(floor_matrix)
+        time_stop = time.time()
 
-    #plt.imshow(floor_matrix)
-    #plt.show()
+        time1_diff.append(time_stop-time_start)
 
-    #min_score, min_start_coordinate = find_match(test_matrix,floor_matrix)
-
+        time3 = time.time()
+        min_score, min_start_coordinate = find_match(test_matrix,floor_matrix)
+        time4 = time.time()
+        time2_diff.append(time4-time3)
+    print(statistics.mean(time1_diff))
+    print(statistics.mean(time2_diff))
   #  outline_region(min_start_coordinate,test_matrix,floor,mismatch)
 
     #plt.figure(0)
