@@ -22,6 +22,60 @@ class ThreadImage(threading.Thread):
         self.stop = True
     def grab_frame(self):
         return self.current_grab
+def array_ripper(param):
+    array = param[1]
+    output = []
+    index = param[0]
+    size = param[2]
+    rows,cols = array.shape
+    row_max = int(rows/size)*size
+    col_max = int(cols/size)*size
+    row_matrix = []
+    time3 = time.time()
+    skip = 2
+    for y in range(0,col_max,size):        
+        count = 0
+        sum_colors = 0
+        for x2 in range(index*size,(index*size)+size,skip):
+            for y2 in range(y,y+size,skip):
+                try:
+                    rgb = array[x2][y2]
+                    sum_colors += rgb
+                    count += 1
+                except:
+                    #print("self.array",len(self.array))
+                    print(x2)
+                    #print("BREAK")
+                    #sys.exit(0)
+        row_matrix.append(float(sum_colors/count))
+    return row_matrix
+def get_array3(pool2,img,localization_size):
+
+    col_max = int(len(img[0])/localization_size)*localization_size
+    row_max = int(len(img)/localization_size)*localization_size
+    #print("col_max",col_max)
+    #print("len(img[0])",len(img[0]))
+    #print("len(img)",len(img))
+    #print("localization_size",localization_size)
+
+    thread_rows = 1
+
+    total_threads = int(len(img)/(thread_rows*localization_size))
+    #print(total_threads,"total_threads")
+
+    
+
+    #final_array = []*total_threads
+    final_array = []
+
+    work = []
+    for x in range(0,total_threads):
+        work.append([x,img,localization_size])
+
+    results = pool.map(array_ripper,work)
+    for result in results:
+        final_array.append(result)
+    return final_array
 
 class ThreadConverter(threading.Thread):
     array = []
@@ -427,12 +481,12 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
     time1 = time.time()
     x1 = min_location[0]*square_size
     y1 = min_location[1]*square_size
-    print("x1",x1)
-    print("y1",y1)
+    #print("x1",x1)
+    #print("y1",y1)
     x2 = x1+len(matrix_values[0])*square_size+square_size
     y2 = y1+len(matrix_values)*square_size+square_size
-    print("x2",x2)
-    print("y2",y2)
+    #print("x2",x2)
+    #print("y2",y2)
     
     cv2.line(floor_img,(x1,y1),(x1,y2),(0,255,0),5)
     cv2.line(floor_img,(x1,y1),(x2,y1),(0,255,0),5)
@@ -461,7 +515,7 @@ class ThreadCopy(threading.Thread):
             if self.copy_image:
                 self.output = np.copy(self.image)
                 self.copy_image = False
-            time.sleep(0.0001)
+            time.sleep(0.001)
     def get_copy(self):
         return self.output
     def request_copy(self):
@@ -470,6 +524,7 @@ class ThreadCopy(threading.Thread):
 
 if __name__ == "__main__":
     pool = multiprocessing.Pool(6)
+    pool2 = multiprocessing.Pool(4)
     grab_matrix = None
     floor = cv2.imread("floor150.png",cv2.IMREAD_GRAYSCALE)
     floor_rgb = cv2.cvtColor(floor,cv2.COLOR_GRAY2RGB)
@@ -483,8 +538,11 @@ if __name__ == "__main__":
     cols = 0
     size_grab = 55
     mismatch = 150
-    floor_matrix = get_array2(floor,mismatch)
+    floor_matrix = get_array3(pool2,floor,mismatch)
     print("Floor matrix loaded")
+    avg = 5
+    run_cnt = 0
+    avg_time = 0
     while True:
         
         try:
@@ -504,7 +562,7 @@ if __name__ == "__main__":
 
 
             time3 = time.time()
-            test_matrix = get_array2(ripped_image,size_grab)
+            test_matrix = get_array3(pool2,ripped_image,size_grab)
             grab_matrix = test_matrix
 
             time4 = time.time()
@@ -519,7 +577,7 @@ if __name__ == "__main__":
             
             #if min_score < 2200:
             time7 = time.time()
-            floor_with_match = outline_region(min_start_coordinate,test_matrix,tcopy.get_copy(),9)
+            floor_with_match = outline_region(min_start_coordinate,test_matrix,tcopy.get_copy(),5)
             
             font = cv2.FONT_HERSHEY_SIMPLEX
             
@@ -528,16 +586,26 @@ if __name__ == "__main__":
             cv2.putText(floor_with_match,str(min_score),(12,12), font, 0.4,(0,0,0),1,cv2.LINE_AA)
 
             cv2.imshow("grab",ripped_image)
-            cv2.imshow("area",imS)
+            cv2.imshow("area",floor_with_match)
 
             time8 = time.time()
             time_else = time8 - time7
 
-            #print("time_else",time_else)
-            print("time_find_match",time_find_match)
-            print("total time",str(time8-time1))
-            frequ = float(1/(time8-time1))
-            print("Frequency",frequ)
+            if(run_cnt%avg == 0 and run_cnt != 0):
+                #print("time_get_array",time_get_array)
+                #print("time_else",time_else)
+                #print("time_find_match",time_find_match)
+                #print("total time",str(time8-time1))
+                avgeraged_time = float(avg_time/5)
+                print(avg_time)
+                print("avgeraged_time",avgeraged_time)
+                frequ = float(1/avgeraged_time)
+                print("Frequency",frequ)
+                avg_time = 0
+            else:
+                avg_time += time8-time1
+
+            run_cnt += 1
             
             #sys.exit(1)
             if cv2.waitKey(1) & 0xFF == ord('q'):
