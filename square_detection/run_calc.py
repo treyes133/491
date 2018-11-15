@@ -40,57 +40,57 @@ def get_array(img,localization_size):
     #print(info_matrix)    
     return info_matrix
 
-def find_match(grab_matrix, floor_matrix):
-    #print("FIND MATCH")
-    #print("----------")
-    scores = []
-    #print(len(grab_matrix[0]))
-    #print(len(grab_matrix))
-    min_score = 255*len(grab_matrix)*len(grab_matrix[0])
+def matcher(receive):
+    index = receive[0]
+    floor_matrix = receive[1]
+    grab_matrix = receive[2]
+    #print("index :: ",index)
+    time1 = time.time()
+    exit_cond = False
+    min_score = 100000000
     min_score_card = None
     min_start_coordinate = [0,0]
     min_floor = []
-    for x in range(0,len(floor_matrix)-len(grab_matrix)):
-        for y in range(0,len(floor_matrix[0])-len(grab_matrix[0])):
-            score = []
-            floor_match = []
-            for xg in range(0,len(grab_matrix)):
-                floor_match_row = []
-                for yg in range(0,len(grab_matrix[0])):
-                    #print("x+xg",x+xg)
-                    #print("y+yg",y+yg)
+    check_count = 0
+    skip = 1
+    finished = False
+    for y in range(0,len(floor_matrix[0])-len(grab_matrix[0])):
+        score = []
+        floor_match = []
+        run = 0
+        exit_cond = False
+        for xg in range(len(grab_matrix)-1,-1,-1*skip):                
+            floor_match_row = []
+            for yg in range(0,len(grab_matrix[0]),skip):
+                #print("x+xg",x+xg)
+                #print("yg",yg)
+                #this could use some tweaking
+                distance_factor = 1/(yg+1)
+                try:
+                    #check_count += 1
+                    floor_match_row.append(floor_matrix[index+xg][y+yg])
+                    value = abs(floor_matrix[index+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
+                except:
+                    traceback.print_exc()
 
-                    #this could use some tweaking!!!
-                    if yg <= int(len(grab_matrix[0])/5):
-                        distance_factor = 1
-                        pass
-                        #print("YG",yg," DF",distance_factor)
-                    else:
-                        distance_factor = 1.1+(len(grab_matrix[0])-pow(yg,2))/len(grab_matrix[0])
-                        pass
+                #print("value",value)
+                score.append(value)
+            if min_score_card != None:
+                if score[run] > min_score_card[run] or sum(score) > min_score:
+                    exit_cond = True
+                    break
+            run += 1
+            floor_match.append(floor_match_row)
+        if sum(score) < min_score and not exit_cond:
+            min_floor = floor_match
+            min_score = sum(score)
+            min_score_card = score
+            min_start_coordinate = [y,index]
+    time2 = time.time()
+    exc_time = time2-time1
+    #print("exc_time",exc_time)
 
-                    
-                    floor_match_row.append(floor_matrix[x+xg][y+yg])
-                    value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
-                        
-                    score.append(value)
-                floor_match.append(floor_match_row)
-            if sum(score) < min_score:
-                        min_floor = floor_match
-                        min_score = sum(score)
-                        min_score_card = score
-                        min_start_coordinate = [y,x]
-            #print(score)
-            #print(sum(score))
-    #print("min score :: ",min_score)
-    #print("min coordinate :: ",min_start_coordinate)
-    #print("Matrix card ")
-    #print("-----------")
-    #print(min_score_card)
-    #print("Matrix match")
-    #print(min_floor)
-
-    return min_score, min_start_coordinate
+    return [min_floor,min_score,min_score_card,min_start_coordinate]
 
 def outline_region(min_location,matrix_values,floor_img,square_size):
 
@@ -211,7 +211,13 @@ for y in range(0,rows,step):
 
     test_matrix = get_array(corrected,size_grab)
 
-    min_score, min_start_coordinate = find_match(test_matrix,floor_matrix)
+    min_score = 255*rows2*cols2
+    min_start_coordinate = None
+    for x in range(cols2):
+        mf,ms,mscorecard,msc = matcher([x,floor_matrix,test_matrix])
+        if ms<min_score:
+            min_score = ms
+            min_start_coordinate = msc
 
     final_image = outline_region(min_start_coordinate,test_matrix,floor_img.copy(),mismatch)
 

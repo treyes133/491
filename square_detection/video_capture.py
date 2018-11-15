@@ -22,6 +22,25 @@ class ThreadImage(threading.Thread):
         self.stop = True
     def grab_frame(self):
         return self.current_grab
+def rotateImage(param):
+    image = param[1]
+    angle = param[0]
+    image_center = tuple(np.array(image.shape[1::-1]) / 2)
+    rot_mat = cv2.getRotationMatrix2D(image_center, angle, 1.0)
+    result = cv2.warpAffine(image, rot_mat, image.shape[1::-1], flags=cv2.INTER_LINEAR)
+    return result
+def rotate(pool3,img,degree):
+    work = []
+    skip = 1
+    final_array = []
+    for x in range(degree*-1,degree+1,skip):
+        work.append([x,img])
+
+    results = pool3.map(rotateImage,work)
+    for result in results:
+        final_array.append(result)
+    return final_array
+    
 def array_ripper(param):
     array = param[1]
     output = []
@@ -205,17 +224,23 @@ def matcher(receive):
         floor_match = []
         run = 0
         exit_cond = False
-        for xg in range(len(grab_matrix)-1,-1,-1*skip):                
+        for xg in range(0,len(grab_matrix),skip):                
             floor_match_row = []
-            for yg in range(0,len(grab_matrix[0]),skip):
+            for yg in range(len(grab_matrix[0])-1,-1,-1*skip):
                 #print("x+xg",x+xg)
                 #print("yg",yg)
                 #this could use some tweaking
-                distance_factor = 1/(yg+1)
+                if(yg >= 5):
+                    distance_factor = 1
+                else:
+                    distance_factor = 1/(len(grab_matrix[0])-yg)
                 try:
                     #check_count += 1
                     floor_match_row.append(floor_matrix[index+xg][y+yg])
                     value = abs(floor_matrix[index+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
+                    print("floor_matrix[index+xg][y+yg]",floor_matrix[index+xg][y+yg])
+                    print("grab_matrix[xg][yg]",grab_matrix[xg][yg])
+                    print("value",value)
                 except:
                     traceback.print_exc()
 
@@ -525,6 +550,7 @@ class ThreadCopy(threading.Thread):
 if __name__ == "__main__":
     pool = multiprocessing.Pool(6)
     pool2 = multiprocessing.Pool(4)
+    pool3 = multiprocessing.Pool(2)
     grab_matrix = None
     floor = cv2.imread("floor150.png",cv2.IMREAD_GRAYSCALE)
     floor_rgb = cv2.cvtColor(floor,cv2.COLOR_GRAY2RGB)
@@ -540,65 +566,95 @@ if __name__ == "__main__":
     mismatch = 150
     floor_matrix = get_array3(pool2,floor,mismatch)
     print("Floor matrix loaded")
-    avg = 5
+    avg = 1
     run_cnt = 0
     avg_time = 0
+    max_score = 0
     while True:
         
         try:
-            tcopy.request_copy()
             time1 = time.time()
+            tcopy.request_copy()
+            
             grab = ti.grab_frame()
-            time2 = time.time()
-            time_grab = time2-time1
+            
+            
             if not check:
                 rows,cols = grab.shape
+                for x in range(rows):
+                    for y in range(cols):
+                        if(y >= 5):
+                            max_score += 255
+                        else:
+                            max_score = 255*(1/(cols-y))
+                print("max_score",max_score)
+                        
                 check = True
-            cv2.rectangle(grab,(20,20),(cols-20,rows-20),5)
-            cv2.rectangle(grab,(20,rows-20-size_grab),(20+size_grab,rows-20),5)
 
-            ripped_image = grab[20:cols-20][20:rows-20]
+            for x in range(0,cols,size_grab):
+                for y in range(0,rows,size_grab):
+                    cv2.rectangle(grab,(x,y),(x+size_grab,y+size_grab),5)
 
+            time2 = time.time()
+            time_grab = time2-time1
 
+            rotated_image = rotate(pool3,grab,1)
 
             time3 = time.time()
-            test_matrix = get_array3(pool2,ripped_image,size_grab)
-            grab_matrix = test_matrix
+            test_matricies = []
+            for x in range(len(rotated_image)):
+                test_matricies.append(get_array3(pool2,rotated_image[x],size_grab))
 
             time4 = time.time()
             time_get_array = time4-time3
 
             time5 = time.time()
             #floor_with_match = floor_rgb.copy()
-            min_score, min_start_coordinate = find_match3(test_matrix,floor_matrix,pool)
+            mins = []
+            for x in range(len(test_matricies)):
+                min_score, min_start_coordinate = find_match3(test_matricies[x],floor_matrix,pool)
+                mins.append([min_score, min_start_coordinate])
+            min_score = 255*rows*cols
+            min_start_coordinate = None
+            min_x = 0
+            for x in range(0,len(mins)):
+                if mins[x][0] < min_score:
+                    min_score = mins[x][0]
+                    min_start_coordinate = mins[x][1]
+                    min_x = x
             time6 = time.time()
             time_find_match = time6 - time5
 
             
             #if min_score < 2200:
             time7 = time.time()
-            floor_with_match = outline_region(min_start_coordinate,test_matrix,tcopy.get_copy(),5)
+            floor_with_match = outline_region(min_start_coordinate,test_matricies[min_x],tcopy.get_copy(),5)
             
             font = cv2.FONT_HERSHEY_SIMPLEX
-            
-            
-            cv2.rectangle(floor_with_match,(0,0),(188,20),(255,255,255),-1)
-            cv2.putText(floor_with_match,str(min_score),(12,12), font, 0.4,(0,0,0),1,cv2.LINE_AA)
 
-            cv2.imshow("grab",ripped_image)
+            percent_match = 100*((max_score-min_score)/max_score)
+            cv2.rectangle(floor_with_match,(0,0),(188,40),(255,255,255),-1)
+            text = str(min_score)
+            text2 = "%"+str(percent_match)
+            cv2.putText(floor_with_match,text,(12,12), font, 0.4,(0,0,0),1,cv2.LINE_AA)
+            cv2.putText(floor_with_match,text2,(12,24), font, 0.4,(0,0,0),1,cv2.LINE_AA)
             cv2.imshow("area",floor_with_match)
+            cv2.imshow("matrix",rotated_image[min_x])
 
             time8 = time.time()
             time_else = time8 - time7
 
             if(run_cnt%avg == 0 and run_cnt != 0):
-                #print("time_get_array",time_get_array)
-                #print("time_else",time_else)
-                #print("time_find_match",time_find_match)
-                #print("total time",str(time8-time1))
-                avgeraged_time = float(avg_time/5)
-                print(avg_time)
-                print("avgeraged_time",avgeraged_time)
+                
+                print("time_grab",time_grab)
+                print("time_get_array",time_get_array)
+                print("time_find_match",time_find_match)
+                print("time_else",time_else)
+                print("total time",str(time8-time1))
+                avgeraged_time = float(avg_time/avg)
+                if avg == 1:
+                    avgeraged_time = time8-time1
+                #print("avgeraged_time",avgeraged_time)
                 frequ = float(1/avgeraged_time)
                 print("Frequency",frequ)
                 avg_time = 0
