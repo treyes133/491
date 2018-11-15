@@ -96,114 +96,6 @@ def get_array3(pool2,img,localization_size):
         final_array.append(result)
     return final_array
 
-class ThreadConverter(threading.Thread):
-    array = []
-    output = []
-    index = -1
-    size = 0
-    finished = False
-    exit_cond = False
-    def __init__(self,array,index,size):
-        time1 =  time.time()
-        threading.Thread.__init__(self)
-        self.array = array
-        self.index = index
-        self.size = size
-        time2= time.time()
-        #print("init,",str(time2-time1))
-        #print(len(self.array),len(self.array[0]))
-        
-    def run(self):
-        rows,cols = self.array.shape
-        row_max = int(rows/self.size)*self.size
-        col_max = int(cols/self.size)*self.size
-        row_matrix = []
-        time3 = time.time()
-        skip = 2
-        for y in range(0,col_max,self.size):        
-            count = 0
-            sum_colors = 0
-            for x2 in range(self.index*self.size,(self.index*self.size)+self.size,skip):
-                for y2 in range(y,y+self.size,skip):
-                    try:
-                        rgb = self.array[x2][y2]
-                        sum_colors += rgb
-                        count += 1
-                    except:
-                        #print("self.array",len(self.array))
-                        print(x2)
-                        #print("BREAK")
-                        #sys.exit(0)
-            row_matrix.append(float(sum_colors/count))
-        self.output = row_matrix
-        self.finished = True
-        time4 = time.time()
-        #print("run time",str(time4-time3))
-        time5 = time.time()            
-        while not self.exit_cond:
-            #print("DONE")
-            time.sleep(0.001)
-            #print("thread",self.index,"has been killed")
-        time6 = time.time()
-        #print("wait time",str(time6-time5))
-    def status(self):
-        return self.finished
-        
-
-def get_array2(img,localization_size):
-
-    col_max = int(len(img[0])/localization_size)*localization_size
-    row_max = int(len(img)/localization_size)*localization_size
-    #print("col_max",col_max)
-    #print("len(img[0])",len(img[0]))
-    #print("len(img)",len(img))
-    #print("localization_size",localization_size)
-    concurrent_threads = 5
-
-    thread_rows = 1
-
-    total_threads = int(len(img)/(thread_rows*localization_size))
-    #print(total_threads,"total_threads")
-
-    #final_array = []*total_threads
-    final_array = []
-
-    xmin = 0
-
-    finished_matrix = [False]*total_threads
-    current_threads = [None]*concurrent_threads
-    while not all(finished_matrix):
-        #print(finished_matrix)
-        for x in range(0,len(current_threads)):
-            #print("checking for fininshed thread")
-            if current_threads[x] is not None:
-                if current_threads[x].status() is True:
-                    
-                    final_array.insert(current_threads[x].index,current_threads[x].output)
-                    current_threads[x].exit_cond = True
-                    finished_matrix[current_threads[x].index] = True
-                    del current_threads[x]
-                    current_threads.append(None)
-                    #sys.exit(0)
-        for t in range(0,len(current_threads)):
-            if current_threads[t] is None:
-                found = False
-                for x in range(xmin,len(finished_matrix)):
-                    #print("running")
-                    if found:
-                        #print("breaking")
-                        break
-                    if finished_matrix[x] is False:
-                        send_array = []
-                        #print("X",x)
-                        #print(current_threads)
-                        #print("new value added")
-                        thread = ThreadConverter(img,x,localization_size)
-                        current_threads[t] = thread
-                        current_threads[t].start()
-                        found = True
-                        xmin += 1
-    return final_array
 
 def matcher(receive):
     index = receive[0]
@@ -317,190 +209,7 @@ def find_match3(grab_matrix, floor_matrix, pool):
     #print(min_floor)
 
     return min_score, min_start_coordinate
-class ThreadMatch(threading.Thread):
-    floor_matrix = None
-    grab_matrix = None
-    index = -1
-    exit_cond = False
-    min_score = 100000000
-    min_score_card = None
-    min_start_coordinate = [0,0]
-    min_floor = []
-    check_count = 0
-    skip = 1
-    finished = False
-    def __init__(self,floormatrix,grabmatrix,index,skip):
-        threading.Thread.__init__(self)
-        self.floor_matrix = floormatrix
-        self.grab_matrix = grabmatrix
-        self.index = index
-        self.min_score = 255*len(self.grab_matrix)*len(self.grab_matrix[0])
-        self.skip = skip
-    def run(self):
-            time1 = time.time()
-            for y in range(0,len(self.floor_matrix[0])-len(self.grab_matrix[0])):
-                score = []
-                floor_match = []
-                run = 0
-                exit_cond = False
-                for xg in range(len(self.grab_matrix)-1,-1,-1*self.skip):                
-                    floor_match_row = []
-                    for yg in range(0,len(self.grab_matrix[0]),self.skip):
-                        #print("x+xg",x+xg)
-                        #print("yg",yg)
-                        #this could use some tweaking
-                        distance_factor = 1/(yg+1)
-                        try:
-                            #check_count += 1
-                            floor_match_row.append(self.floor_matrix[self.index+xg][y+yg])
-                            value = abs(self.floor_matrix[self.index+xg][y+yg]-self.grab_matrix[xg][yg])*distance_factor
-                        except:
-                            traceback.print_exc()
 
-                    
-                    
-                        #print("value",value)
-                        score.append(value)
-                    if self.min_score_card != None:
-                        if score[run] > self.min_score_card[run] or sum(score) > self.min_score:
-                            exit_cond = True
-                            break
-                    run += 1
-                    floor_match.append(floor_match_row)
-                if sum(score) < self.min_score and not exit_cond:
-                    self.min_floor = floor_match
-                    self.min_score = sum(score)
-                    self.min_score_card = score
-                    self.min_start_coordinate = [y,self.index]
-            self.finished = True
-            time2 = time.time()
-            exc_time = time2-time1
-            #print("exc_time",exc_time)
-    def finish(self):
-        if self.finished:
-            return [self.min_floor,self.min_score,self.min_score_card,self.min_start_coordinate]
-        else:
-            return None
-
-def find_match2(grab_matrix, floor_matrix):
-    #print("FIND MATCH")
-    #print("----------")
-    scores = []
-    #print(len(grab_matrix[0]))
-    #print(len(grab_matrix))
-    min_score = 255*len(grab_matrix)*len(grab_matrix[0])
-    min_score_card = None
-    min_start_coordinate = [0,0]
-    min_floor = []
-    check_count = 0
-    skip = 1
-    threads = []
-    fin = [False]*(len(floor_matrix)-len(grab_matrix))
-    print("len(fin)",len(fin))
-    time1 = time.time()
-    for x in range(0,len(floor_matrix)-len(grab_matrix)):
-        time7 = time.time()
-        tm = ThreadMatch(floor_matrix,grab_matrix,x,skip)
-        tm.start()
-        time8 = time.time()
-        physical_fork_time = time8-time7
-        #print("physical_fork_time",physical_fork_time)
-        threads.append(tm)
-    pool.close() 
-    pool.join()
-    time2 = time.time()
-    fork_time = time2-time1
-    print("fork_time",fork_time)
-    time3 = time.time()
-    for x in range(0,len(threads)):
-        thread = threads[x]
-        returned = thread.finish()
-        if returned is not None:
-            if returned[1] < min_score:
-                min_floor = returned[0]
-                min_score = returned[1]
-                min_score_card = returned[2]
-                min_start_coordinate = returned[3]
-            fin[x] = True
-    time4 = time.time()
-    read_time = time4-time3
-    #print("read_time",read_time)
-    #print("all(fin)",all(fin))
-        
-        
-                
-        
-    #print("check_count",check_count)
-            #print(score)
-            #print(sum(score))
-    #print("min score :: ",min_score)
-    #print("min coordinate :: ",min_start_coordinate)
-    #print("Matrix card ")
-    #print("-----------")
-    #print(min_score_card)
-    #print("Matrix match")
-    #print(min_floor)
-
-    return min_score, min_start_coordinate
-def find_match(grab_matrix, floor_matrix):
-    #print("FIND MATCH")
-    #print("----------")
-    scores = []
-    #print(len(grab_matrix[0]))
-    #print(len(grab_matrix))
-    min_score = 255*len(grab_matrix)*len(grab_matrix[0])
-    min_score_card = None
-    min_start_coordinate = [0,0]
-    min_floor = []
-    check_count = 0
-    skip = 1
-    for x in range(0,len(floor_matrix)-len(grab_matrix)):
-        for y in range(0,len(floor_matrix[0])-len(grab_matrix[0])):
-            score = []
-            floor_match = []
-            run = 0
-            exit_cond = False
-            for xg in range(len(grab_matrix)-1,-1,-1*skip):                
-                floor_match_row = []
-                for yg in range(0,len(grab_matrix[0]),skip):
-                    #print("x+xg",x+xg)
-                    #print("yg",yg)
-                    #this could use some tweaking
-                    distance_factor = 1/(yg+1)
-                    try:
-                        check_count += 1
-                        floor_match_row.append(floor_matrix[x+xg][y+yg])
-                        value = abs(floor_matrix[x+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
-                    except:
-                        traceback.print_exc()
-
-                    
-                    
-                    #print("value",value)
-                    score.append(value)
-                if min_score_card != None:
-                    if score[run] > min_score_card[run] or sum(score) > min_score:
-                        exit_cond = True
-                        break
-                run += 1
-                floor_match.append(floor_match_row)
-            if sum(score) < min_score and not exit_cond:
-                min_floor = floor_match
-                min_score = sum(score)
-                min_score_card = score
-                min_start_coordinate = [y,x]
-    #print("check_count",check_count)
-            #print(score)
-            #print(sum(score))
-    #print("min score :: ",min_score)
-    #print("min coordinate :: ",min_start_coordinate)
-    #print("Matrix card ")
-    #print("-----------")
-    #print(min_score_card)
-    #print("Matrix match")
-    #print(min_floor)
-
-    return min_score, min_start_coordinate
 
 def outline_region(min_location,matrix_values,floor_img,square_size):
     time1 = time.time()
@@ -577,6 +286,9 @@ if __name__ == "__main__":
             tcopy.request_copy()
             
             grab = ti.grab_frame()
+            grab_rotate = rotateImage([90,grab])
+            horizontal_img = cv2.flip( grab_rotate, 0 )
+            grab = horizontal_img
             
             
             if not check:
@@ -598,13 +310,12 @@ if __name__ == "__main__":
             time2 = time.time()
             time_grab = time2-time1
 
-            rotated_image = rotate(pool3,grab,1)
+            rotated_image = rotate(pool3,grab,4)
 
             time3 = time.time()
             test_matricies = []
             for x in range(len(rotated_image)):
                 test_matricies.append(get_array3(pool2,rotated_image[x],size_grab))
-
             time4 = time.time()
             time_get_array = time4-time3
 
@@ -624,13 +335,25 @@ if __name__ == "__main__":
                     min_x = x
             time6 = time.time()
             time_find_match = time6 - time5
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            final_matrix = test_matricies[min_x]
+            average_array_display = np.zeros([size_grab*(len(final_matrix)),size_grab*(len(final_matrix[0])),1],np.uint8)
+            for x in range(len(final_matrix)):
+                for y in range(len(final_matrix[0])):
+                    #print("final_matrix[x][y]",final_matrix[x][y])
+                    color = int(final_matrix[x][y])
+                    cv2.rectangle(average_array_display,(x*size_grab,y*size_grab),(x*size_grab+size_grab,y*size_grab+size_grab),(color),-1)
+                    cv2.putText(average_array_display,str(color),(int(x*size_grab+size_grab/2),int(y*size_grab+size_grab/2 - 10)), font, 0.4,(0,0,0),1,cv2.LINE_AA)
+                    cv2.putText(average_array_display,str(color),(int(x*size_grab+size_grab/2),int(y*size_grab+size_grab/2 + 10)), font, 0.4,(255,255,255),1,cv2.LINE_AA)
+                    
+                            
 
             
             #if min_score < 2200:
             time7 = time.time()
             floor_with_match = outline_region(min_start_coordinate,test_matricies[min_x],tcopy.get_copy(),5)
             
-            font = cv2.FONT_HERSHEY_SIMPLEX
+            
 
             percent_match = 100*((max_score-min_score)/max_score)
             cv2.rectangle(floor_with_match,(0,0),(188,40),(255,255,255),-1)
@@ -638,8 +361,13 @@ if __name__ == "__main__":
             text2 = "%"+str(percent_match)
             cv2.putText(floor_with_match,text,(12,12), font, 0.4,(0,0,0),1,cv2.LINE_AA)
             cv2.putText(floor_with_match,text2,(12,24), font, 0.4,(0,0,0),1,cv2.LINE_AA)
+
+            
+            temp = rotateImage([-90,rotated_image[min_x]])
+            temp2 = cv2.flip( temp, 1 )
             cv2.imshow("area",floor_with_match)
-            cv2.imshow("matrix",rotated_image[min_x])
+            cv2.imshow("matrix",temp2)
+            cv2.imshow("average",average_array_display)
 
             time8 = time.time()
             time_else = time8 - time7
