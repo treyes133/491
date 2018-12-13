@@ -1,0 +1,25 @@
+# Target labels
+ Main
+ opencv_dnn
+ PerfTest
+# Source files and their labels
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/modules/dnn/perf/perf_caffe.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/modules/dnn/perf/perf_convolution.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/modules/dnn/perf/perf_main.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/modules/dnn/perf/perf_net.cpp
+ Main
+ opencv_dnn
+ PerfTest
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/modules/dnn/perf/perf_precomp.hpp
+ Main
+ opencv_dnn
+ PerfTest

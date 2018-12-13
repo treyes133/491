@@ -1,0 +1,1 @@
+-isystem C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final -IC:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/modules/core/include -IC:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/apps/version/PRIVATE -IC:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/include/opencv 

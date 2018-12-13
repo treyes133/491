@@ -1,0 +1,1570 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/3.6.1/CompilerIdCXX/a.exe"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/MinGW/bin/gcc.exe 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/3.6.1/CompilerIdC/a.exe"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_11418/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_11418.dir\build.make CMakeFiles/cmTC_11418.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_11418.dir/testCXXCompiler.cxx.obj
+C:\MinGW\bin\g++.exe      -o CMakeFiles\cmTC_11418.dir\testCXXCompiler.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_11418.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_11418.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_11418.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_11418.dir/objects.a @CMakeFiles\cmTC_11418.dir\objects1.rsp
+C:\MinGW\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_11418.dir/objects.a -Wl,--no-whole-archive  -o cmTC_11418.exe -Wl,--out-implib,libcmTC_11418.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_11418.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_13c1f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_13c1f.dir\build.make CMakeFiles/cmTC_13c1f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_13c1f.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MinGW\bin\g++.exe      -o CMakeFiles\cmTC_13c1f.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTC_13c1f.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_13c1f.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_13c1f.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_13c1f.dir/objects.a @CMakeFiles\cmTC_13c1f.dir\objects1.rsp
+C:\MinGW\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_13c1f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_13c1f.exe -Wl,--out-implib,libcmTC_13c1f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
+Using built-in specs.
+COLLECT_GCC=C:\MinGW\bin\g++.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-4.9.3/configure --build=x86_64-pc-linux-gnu --host=mingw32 --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --enable-libstdcxx-debug --with-tune=generic --enable-nls
+Thread model: win32
+gcc version 4.9.3 (GCC) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.9.3/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_13c1f.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Tomas\AppData\Local\Temp\cccKd1PX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_13c1f.exe c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../.. --whole-archive CMakeFiles\cmTC_13c1f.dir/objects.a --no-whole-archive --out-implib libcmTC_13c1f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_13c1f/fast"]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_13c1f.dir\build.make CMakeFiles/cmTC_13c1f.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_13c1f.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\MinGW\bin\g++.exe      -o CMakeFiles\cmTC_13c1f.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTC_13c1f.exe]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_13c1f.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_13c1f.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_13c1f.dir/objects.a @CMakeFiles\cmTC_13c1f.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\g++.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_13c1f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_13c1f.exe -Wl,--out-implib,libcmTC_13c1f.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-4.9.3/configure --build=x86_64-pc-linux-gnu --host=mingw32 --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --enable-libstdcxx-debug --with-tune=generic --enable-nls]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.9.3/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_13c1f.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Tomas\AppData\Local\Temp\cccKd1PX.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_13c1f.exe c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../.. --whole-archive CMakeFiles\cmTC_13c1f.dir/objects.a --no-whole-archive --out-implib libcmTC_13c1f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\Tomas\AppData\Local\Temp\cccKd1PX.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-u] ==> ignore
+    arg [___register_frame_info] ==> ignore
+    arg [-u] ==> ignore
+    arg [___deregister_frame_info] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_13c1f.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_13c1f.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_13c1f.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtend.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3] ==> [C:/MinGW/lib/gcc/mingw32/4.9.3]
+  collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../..] ==> [C:/MinGW/lib]
+  implicit libs: [stdc++;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [C:/MinGW/lib/gcc/mingw32/4.9.3;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_31c8e/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_31c8e.dir\build.make CMakeFiles/cmTC_31c8e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31c8e.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe     -std=c++14 -o CMakeFiles\cmTC_31c8e.dir\feature_tests.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_31c8e.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_31c8e.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_31c8e.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_31c8e.dir/objects.a @CMakeFiles\cmTC_31c8e.dir\objects1.rsp
+C:\MinGW\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_31c8e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_31c8e.exe -Wl,--out-implib,libcmTC_31c8e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_31c8e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a51da/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a51da.dir\build.make CMakeFiles/cmTC_a51da.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a51da.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe     -std=c++11 -o CMakeFiles\cmTC_a51da.dir\feature_tests.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_a51da.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a51da.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a51da.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_a51da.dir/objects.a @CMakeFiles\cmTC_a51da.dir\objects1.rsp
+C:\MinGW\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_a51da.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a51da.exe -Wl,--out-implib,libcmTC_a51da.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a51da.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_19067/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_19067.dir\build.make CMakeFiles/cmTC_19067.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_19067.dir/feature_tests.cxx.obj
+C:\MinGW\bin\g++.exe     -std=c++98 -o CMakeFiles\cmTC_19067.dir\feature_tests.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_19067.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_19067.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_19067.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_19067.dir/objects.a @CMakeFiles\cmTC_19067.dir\objects1.rsp
+C:\MinGW\bin\g++.exe       -Wl,--whole-archive CMakeFiles\cmTC_19067.dir/objects.a -Wl,--no-whole-archive  -o cmTC_19067.exe -Wl,--out-implib,libcmTC_19067.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_19067.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_34f21/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_34f21.dir\build.make CMakeFiles/cmTC_34f21.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34f21.dir/testCCompiler.c.obj
+C:\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_34f21.dir\testCCompiler.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_34f21.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_34f21.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_34f21.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_34f21.dir/objects.a @CMakeFiles\cmTC_34f21.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_34f21.dir/objects.a -Wl,--no-whole-archive  -o cmTC_34f21.exe -Wl,--out-implib,libcmTC_34f21.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_34f21.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_8d18c/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_8d18c.dir\build.make CMakeFiles/cmTC_8d18c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d18c.dir/CMakeCCompilerABI.c.obj
+C:\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_8d18c.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTC_8d18c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8d18c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8d18c.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_8d18c.dir/objects.a @CMakeFiles\cmTC_8d18c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_8d18c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8d18c.exe -Wl,--out-implib,libcmTC_8d18c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
+Using built-in specs.
+COLLECT_GCC=C:\MinGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-4.9.3/configure --build=x86_64-pc-linux-gnu --host=mingw32 --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --enable-libstdcxx-debug --with-tune=generic --enable-nls
+Thread model: win32
+gcc version 4.9.3 (GCC) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.9.3/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d18c.exe' '-mtune=generic' '-march=i586'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Tomas\AppData\Local\Temp\cc2bgKjp.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_8d18c.exe c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../.. --whole-archive CMakeFiles\cmTC_8d18c.dir/objects.a --no-whole-archive --out-implib libcmTC_8d18c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_8d18c/fast"]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_8d18c.dir\build.make CMakeFiles/cmTC_8d18c.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_8d18c.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\MinGW\bin\gcc.exe     -o CMakeFiles\cmTC_8d18c.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTC_8d18c.exe]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8d18c.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8d18c.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_8d18c.dir/objects.a @CMakeFiles\cmTC_8d18c.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\gcc.exe      -v -Wl,--whole-archive CMakeFiles\cmTC_8d18c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8d18c.exe -Wl,--out-implib,libcmTC_8d18c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-4.9.3/configure --build=x86_64-pc-linux-gnu --host=mingw32 --prefix=/mingw --disable-win32-registry --target=mingw32 --with-arch=i586 --enable-languages=c,c++,objc,obj-c++,fortran,ada --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --enable-libstdcxx-debug --with-tune=generic --enable-nls]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.9.3 (GCC) ]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.9.3/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8d18c.exe' '-mtune=generic' '-march=i586']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Tomas\AppData\Local\Temp\cc2bgKjp.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_8d18c.exe c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../.. --whole-archive CMakeFiles\cmTC_8d18c.dir/objects.a --no-whole-archive --out-implib libcmTC_8d18c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/4.9.3/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\Tomas\AppData\Local\Temp\cc2bgKjp.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_8d18c.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_8d18c.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_8d18c.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/crtend.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_eh]
+  remove lib [gcc]
+  remove lib [gcc_eh]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3] ==> [C:/MinGW/lib/gcc/mingw32/4.9.3]
+  collapse library dir [c:/mingw/bin/../lib/gcc] ==> [C:/MinGW/lib/gcc]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../../../mingw32/lib] ==> [C:/MinGW/mingw32/lib]
+  collapse library dir [c:/mingw/bin/../lib/gcc/mingw32/4.9.3/../../..] ==> [C:/MinGW/lib]
+  implicit libs: [mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [C:/MinGW/lib/gcc/mingw32/4.9.3;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_88c9d/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_88c9d.dir\build.make CMakeFiles/cmTC_88c9d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88c9d.dir/feature_tests.c.obj
+C:\MinGW\bin\gcc.exe    -std=c11 -o CMakeFiles\cmTC_88c9d.dir\feature_tests.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\feature_tests.c
+Linking C executable cmTC_88c9d.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_88c9d.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_88c9d.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_88c9d.dir/objects.a @CMakeFiles\cmTC_88c9d.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_88c9d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_88c9d.exe -Wl,--out-implib,libcmTC_88c9d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_88c9d.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_00db7/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_00db7.dir\build.make CMakeFiles/cmTC_00db7.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00db7.dir/feature_tests.c.obj
+C:\MinGW\bin\gcc.exe    -std=c99 -o CMakeFiles\cmTC_00db7.dir\feature_tests.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\feature_tests.c
+Linking C executable cmTC_00db7.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_00db7.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_00db7.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_00db7.dir/objects.a @CMakeFiles\cmTC_00db7.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_00db7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_00db7.exe -Wl,--out-implib,libcmTC_00db7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_00db7.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_481ce/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_481ce.dir\build.make CMakeFiles/cmTC_481ce.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_481ce.dir/feature_tests.c.obj
+C:\MinGW\bin\gcc.exe    -std=c90 -o CMakeFiles\cmTC_481ce.dir\feature_tests.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\feature_tests.c
+Linking C executable cmTC_481ce.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_481ce.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_481ce.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_481ce.dir/objects.a @CMakeFiles\cmTC_481ce.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -Wl,--whole-archive CMakeFiles\cmTC_481ce.dir/objects.a -Wl,--no-whole-archive  -o cmTC_481ce.exe -Wl,--out-implib,libcmTC_481ce.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_481ce.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a3c45/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a3c45.dir\build.make CMakeFiles/cmTC_a3c45.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3c45.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_a3c45.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_a3c45.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a3c45.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a3c45.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_a3c45.dir/objects.a @CMakeFiles\cmTC_a3c45.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_a3c45.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a3c45.exe -Wl,--out-implib,libcmTC_a3c45.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a3c45.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_52db9/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_52db9.dir\build.make CMakeFiles/cmTC_52db9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52db9.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_52db9.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_52db9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_52db9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_52db9.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_52db9.dir/objects.a @CMakeFiles\cmTC_52db9.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_52db9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_52db9.exe -Wl,--out-implib,libcmTC_52db9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_52db9.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_61d59/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_61d59.dir\build.make CMakeFiles/cmTC_61d59.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61d59.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_61d59.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_61d59.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_61d59.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_61d59.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_61d59.dir/objects.a @CMakeFiles\cmTC_61d59.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_61d59.dir/objects.a -Wl,--no-whole-archive  -o cmTC_61d59.exe -Wl,--out-implib,libcmTC_61d59.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_61d59.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_92d03/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_92d03.dir\build.make CMakeFiles/cmTC_92d03.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92d03.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_92d03.dir\CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_92d03.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_92d03.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_92d03.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_92d03.dir/objects.a @CMakeFiles\cmTC_92d03.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_92d03.dir/objects.a -Wl,--no-whole-archive  -o cmTC_92d03.exe -Wl,--out-implib,libcmTC_92d03.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_92d03.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_9ea7a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_9ea7a.dir\build.make CMakeFiles/cmTC_9ea7a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ea7a.dir/TestEndianess.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_9ea7a.dir\TestEndianess.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\TestEndianess.c
+Linking C executable cmTC_9ea7a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9ea7a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_9ea7a.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_9ea7a.dir/objects.a @CMakeFiles\cmTC_9ea7a.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_9ea7a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9ea7a.exe -Wl,--out-implib,libcmTC_9ea7a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9ea7a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_06be9/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_06be9.dir\build.make CMakeFiles/cmTC_06be9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06be9.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_06be9.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_06be9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_06be9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_06be9.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_06be9.dir/objects.a @CMakeFiles\cmTC_06be9.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_06be9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_06be9.exe -Wl,--out-implib,libcmTC_06be9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_06be9.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of off64_t passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_83eab/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_83eab.dir\build.make CMakeFiles/cmTC_83eab.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83eab.dir/OFF64_T.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_83eab.dir\OFF64_T.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\OFF64_T.c
+Linking C executable cmTC_83eab.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_83eab.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_83eab.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_83eab.dir/objects.a @CMakeFiles\cmTC_83eab.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_83eab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_83eab.exe -Wl,--out-implib,libcmTC_83eab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_83eab.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of size_t passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_f1934/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_f1934.dir\build.make CMakeFiles/cmTC_f1934.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1934.dir/SIZEOF_SIZE_T.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-unused-parameter -Wno-sign-compare  -O3 -DNDEBUG   -o CMakeFiles\cmTC_f1934.dir\SIZEOF_SIZE_T.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c
+Linking C executable cmTC_f1934.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_f1934.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_f1934.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_f1934.dir/objects.a @CMakeFiles\cmTC_f1934.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-unused-parameter -Wno-sign-compare  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_f1934.dir/objects.a -Wl,--no-whole-archive  -o cmTC_f1934.exe -Wl,--out-implib,libcmTC_f1934.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_f1934.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_1a7d6/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_1a7d6.dir\build.make CMakeFiles/cmTC_1a7d6.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a7d6.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_1a7d6.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_1a7d6.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1a7d6.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_1a7d6.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_1a7d6.dir/objects.a @CMakeFiles\cmTC_1a7d6.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_1a7d6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_1a7d6.exe -Wl,--out-implib,libcmTC_1a7d6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_1a7d6.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_9cc45/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_9cc45.dir\build.make CMakeFiles/cmTC_9cc45.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9cc45.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_9cc45.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_9cc45.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9cc45.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_9cc45.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_9cc45.dir/objects.a @CMakeFiles\cmTC_9cc45.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_9cc45.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9cc45.exe -Wl,--out-implib,libcmTC_9cc45.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9cc45.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_6f384/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_6f384.dir\build.make CMakeFiles/cmTC_6f384.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6f384.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_6f384.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_6f384.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6f384.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_6f384.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_6f384.dir/objects.a @CMakeFiles\cmTC_6f384.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_6f384.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6f384.exe -Wl,--out-implib,libcmTC_6f384.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6f384.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b2bcb/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b2bcb.dir\build.make CMakeFiles/cmTC_b2bcb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2bcb.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_b2bcb.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_b2bcb.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b2bcb.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b2bcb.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_b2bcb.dir/objects.a @CMakeFiles\cmTC_b2bcb.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_b2bcb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b2bcb.exe -Wl,--out-implib,libcmTC_b2bcb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b2bcb.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_23fc5/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_23fc5.dir\build.make CMakeFiles/cmTC_23fc5.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23fc5.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_23fc5.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_23fc5.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_23fc5.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_23fc5.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_23fc5.dir/objects.a @CMakeFiles\cmTC_23fc5.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_23fc5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_23fc5.exe -Wl,--out-implib,libcmTC_23fc5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_23fc5.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_43ffb/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_43ffb.dir\build.make CMakeFiles/cmTC_43ffb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43ffb.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_43ffb.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_43ffb.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_43ffb.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_43ffb.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_43ffb.dir/objects.a @CMakeFiles\cmTC_43ffb.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_43ffb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_43ffb.exe -Wl,--out-implib,libcmTC_43ffb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_43ffb.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a39be/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a39be.dir\build.make CMakeFiles/cmTC_a39be.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a39be.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_a39be.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_a39be.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a39be.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a39be.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_a39be.dir/objects.a @CMakeFiles\cmTC_a39be.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_a39be.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a39be.exe -Wl,--out-implib,libcmTC_a39be.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a39be.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_d00c9/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d00c9.dir\build.make CMakeFiles/cmTC_d00c9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d00c9.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_d00c9.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_d00c9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d00c9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d00c9.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d00c9.dir/objects.a @CMakeFiles\cmTC_d00c9.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_d00c9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d00c9.exe -Wl,--out-implib,libcmTC_d00c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d00c9.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e10be/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e10be.dir\build.make CMakeFiles/cmTC_e10be.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e10be.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_e10be.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_e10be.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e10be.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e10be.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_e10be.dir/objects.a @CMakeFiles\cmTC_e10be.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_e10be.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e10be.exe -Wl,--out-implib,libcmTC_e10be.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e10be.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_032e3/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_032e3.dir\build.make CMakeFiles/cmTC_032e3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_032e3.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_032e3.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_032e3.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_032e3.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_032e3.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_032e3.dir/objects.a @CMakeFiles\cmTC_032e3.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_032e3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_032e3.exe -Wl,--out-implib,libcmTC_032e3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_032e3.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_5cc69/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5cc69.dir\build.make CMakeFiles/cmTC_5cc69.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cc69.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_5cc69.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_5cc69.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5cc69.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_5cc69.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_5cc69.dir/objects.a @CMakeFiles\cmTC_5cc69.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_5cc69.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5cc69.exe -Wl,--out-implib,libcmTC_5cc69.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5cc69.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_48ec3/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_48ec3.dir\build.make CMakeFiles/cmTC_48ec3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_48ec3.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_48ec3.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_48ec3.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_48ec3.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_48ec3.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_48ec3.dir/objects.a @CMakeFiles\cmTC_48ec3.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_48ec3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_48ec3.exe -Wl,--out-implib,libcmTC_48ec3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_48ec3.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e48d7/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e48d7.dir\build.make CMakeFiles/cmTC_e48d7.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e48d7.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_e48d7.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+Linking C executable cmTC_e48d7.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e48d7.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e48d7.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_e48d7.dir/objects.a @CMakeFiles\cmTC_e48d7.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_e48d7.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e48d7.exe -Wl,--out-implib,libcmTC_e48d7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e48d7.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test C_HAS_inline succeeded with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_45249/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_45249.dir\build.make CMakeFiles/cmTC_45249.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45249.dir/src.c.obj
+C:\MinGW\bin\gcc.exe  -Dinline=inline  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DC_HAS_inline -O3 -DNDEBUG   -o CMakeFiles\cmTC_45249.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:3:29: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+         static inline foo_t static_foo() {return 0;}
+                             ^
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:4:15: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+         foo_t foo(){return 0;}
+               ^
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c: In function 'main':
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:5:22: warning: unused parameter 'argc' [-Wunused-parameter]
+         int main(int argc, char *argv[]) {return 0;}
+                      ^
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:5:34: warning: unused parameter 'argv' [-Wunused-parameter]
+         int main(int argc, char *argv[]) {return 0;}
+                                  ^
+Linking C executable cmTC_45249.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_45249.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_45249.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_45249.dir/objects.a @CMakeFiles\cmTC_45249.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DC_HAS_inline -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_45249.dir/objects.a -Wl,--no-whole-archive  -o cmTC_45249.exe -Wl,--out-implib,libcmTC_45249.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_45249.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+        typedef int foo_t;
+        static inline foo_t static_foo() {return 0;}
+        foo_t foo(){return 0;}
+        int main(int argc, char *argv[]) {return 0;}
+Determining size of signed short passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_28549/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_28549.dir\build.make CMakeFiles/cmTC_28549.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28549.dir/SIZEOF_SIGNED_SHORT.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_28549.dir\SIZEOF_SIGNED_SHORT.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_SHORT.c
+Linking C executable cmTC_28549.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_28549.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_28549.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_28549.dir/objects.a @CMakeFiles\cmTC_28549.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_28549.dir/objects.a -Wl,--no-whole-archive  -o cmTC_28549.exe -Wl,--out-implib,libcmTC_28549.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_28549.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_5af8b/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5af8b.dir\build.make CMakeFiles/cmTC_5af8b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5af8b.dir/SIZEOF_UNSIGNED_SHORT.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_5af8b.dir\SIZEOF_UNSIGNED_SHORT.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_5af8b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5af8b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_5af8b.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_5af8b.dir/objects.a @CMakeFiles\cmTC_5af8b.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_5af8b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5af8b.exe -Wl,--out-implib,libcmTC_5af8b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5af8b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed int passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_5ed57/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5ed57.dir\build.make CMakeFiles/cmTC_5ed57.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ed57.dir/SIZEOF_SIGNED_INT.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_5ed57.dir\SIZEOF_SIGNED_INT.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_INT.c
+Linking C executable cmTC_5ed57.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5ed57.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_5ed57.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_5ed57.dir/objects.a @CMakeFiles\cmTC_5ed57.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_5ed57.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5ed57.exe -Wl,--out-implib,libcmTC_5ed57.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5ed57.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_58d30/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_58d30.dir\build.make CMakeFiles/cmTC_58d30.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58d30.dir/SIZEOF_UNSIGNED_INT.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_58d30.dir\SIZEOF_UNSIGNED_INT.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_INT.c
+Linking C executable cmTC_58d30.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_58d30.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_58d30.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_58d30.dir/objects.a @CMakeFiles\cmTC_58d30.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_58d30.dir/objects.a -Wl,--no-whole-archive  -o cmTC_58d30.exe -Wl,--out-implib,libcmTC_58d30.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_58d30.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed long passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a0691/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a0691.dir\build.make CMakeFiles/cmTC_a0691.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0691.dir/SIZEOF_SIGNED_LONG.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_a0691.dir\SIZEOF_SIGNED_LONG.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG.c
+Linking C executable cmTC_a0691.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a0691.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a0691.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_a0691.dir/objects.a @CMakeFiles\cmTC_a0691.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_a0691.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a0691.exe -Wl,--out-implib,libcmTC_a0691.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a0691.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned long passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_8c4ca/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_8c4ca.dir\build.make CMakeFiles/cmTC_8c4ca.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c4ca.dir/SIZEOF_UNSIGNED_LONG.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_8c4ca.dir\SIZEOF_UNSIGNED_LONG.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG.c
+Linking C executable cmTC_8c4ca.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8c4ca.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8c4ca.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_8c4ca.dir/objects.a @CMakeFiles\cmTC_8c4ca.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_8c4ca.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8c4ca.exe -Wl,--out-implib,libcmTC_8c4ca.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8c4ca.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of signed long long passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_86653/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_86653.dir\build.make CMakeFiles/cmTC_86653.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86653.dir/SIZEOF_SIGNED_LONG_LONG.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_86653.dir\SIZEOF_SIGNED_LONG_LONG.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG_LONG.c
+Linking C executable cmTC_86653.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_86653.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_86653.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_86653.dir/objects.a @CMakeFiles\cmTC_86653.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_86653.dir/objects.a -Wl,--no-whole-archive  -o cmTC_86653.exe -Wl,--out-implib,libcmTC_86653.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_86653.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned long long passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_3cfec/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3cfec.dir\build.make CMakeFiles/cmTC_3cfec.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3cfec.dir/SIZEOF_UNSIGNED_LONG_LONG.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_3cfec.dir\SIZEOF_UNSIGNED_LONG_LONG.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG_LONG.c
+Linking C executable cmTC_3cfec.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3cfec.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3cfec.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_3cfec.dir/objects.a @CMakeFiles\cmTC_3cfec.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_3cfec.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3cfec.exe -Wl,--out-implib,libcmTC_3cfec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3cfec.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned char * passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_8d4b3/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_8d4b3.dir\build.make CMakeFiles/cmTC_8d4b3.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8d4b3.dir/SIZEOF_UNSIGNED_CHAR_P.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_8d4b3.dir\SIZEOF_UNSIGNED_CHAR_P.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_CHAR_P.c
+Linking C executable cmTC_8d4b3.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8d4b3.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8d4b3.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_8d4b3.dir/objects.a @CMakeFiles\cmTC_8d4b3.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_8d4b3.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8d4b3.exe -Wl,--out-implib,libcmTC_8d4b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8d4b3.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining size of ptrdiff_t passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_56f91/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_56f91.dir\build.make CMakeFiles/cmTC_56f91.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56f91.dir/SIZEOF_PTRDIFF_T.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_56f91.dir\SIZEOF_PTRDIFF_T.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\SIZEOF_PTRDIFF_T.c
+Linking C executable cmTC_56f91.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_56f91.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_56f91.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_56f91.dir/objects.a @CMakeFiles\cmTC_56f91.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_56f91.dir/objects.a -Wl,--no-whole-archive  -o cmTC_56f91.exe -Wl,--out-implib,libcmTC_56f91.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_56f91.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function floor exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_0f8bb/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0f8bb.dir\build.make CMakeFiles/cmTC_0f8bb.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f8bb.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=floor -O3 -DNDEBUG   -o CMakeFiles\cmTC_0f8bb.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'floor'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_0f8bb.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0f8bb.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0f8bb.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0f8bb.dir/objects.a @CMakeFiles\cmTC_0f8bb.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=floor -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_0f8bb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0f8bb.exe -Wl,--out-implib,libcmTC_0f8bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0f8bb.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pow exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e7e7e/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e7e7e.dir\build.make CMakeFiles/cmTC_e7e7e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7e7e.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=pow -O3 -DNDEBUG   -o CMakeFiles\cmTC_e7e7e.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'pow'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_e7e7e.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e7e7e.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e7e7e.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_e7e7e.dir/objects.a @CMakeFiles\cmTC_e7e7e.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=pow -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_e7e7e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e7e7e.exe -Wl,--out-implib,libcmTC_e7e7e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e7e7e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function sqrt exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_9b4dd/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_9b4dd.dir\build.make CMakeFiles/cmTC_9b4dd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b4dd.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sqrt -O3 -DNDEBUG   -o CMakeFiles\cmTC_9b4dd.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'sqrt'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_9b4dd.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_9b4dd.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_9b4dd.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_9b4dd.dir/objects.a @CMakeFiles\cmTC_9b4dd.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=sqrt -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_9b4dd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_9b4dd.exe -Wl,--out-implib,libcmTC_9b4dd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_9b4dd.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function isascii exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_18e5f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_18e5f.dir\build.make CMakeFiles/cmTC_18e5f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18e5f.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=isascii -O3 -DNDEBUG   -o CMakeFiles\cmTC_18e5f.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'isascii'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_18e5f.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_18e5f.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_18e5f.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_18e5f.dir/objects.a @CMakeFiles\cmTC_18e5f.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=isascii -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_18e5f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_18e5f.exe -Wl,--out-implib,libcmTC_18e5f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_18e5f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_90205/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_90205.dir\build.make CMakeFiles/cmTC_90205.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90205.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=memset -O3 -DNDEBUG   -o CMakeFiles\cmTC_90205.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'memset'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_90205.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_90205.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_90205.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_90205.dir/objects.a @CMakeFiles\cmTC_90205.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=memset -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_90205.dir/objects.a -Wl,--no-whole-archive  -o cmTC_90205.exe -Wl,--out-implib,libcmTC_90205.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_90205.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getopt exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_04e1b/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_04e1b.dir\build.make CMakeFiles/cmTC_04e1b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04e1b.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=getopt -O3 -DNDEBUG   -o CMakeFiles\cmTC_04e1b.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_04e1b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_04e1b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_04e1b.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_04e1b.dir/objects.a @CMakeFiles\cmTC_04e1b.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=getopt -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_04e1b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_04e1b.exe -Wl,--out-implib,libcmTC_04e1b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_04e1b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_6da22/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_6da22.dir\build.make CMakeFiles/cmTC_6da22.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6da22.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=memmove -O3 -DNDEBUG   -o CMakeFiles\cmTC_6da22.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'memmove'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_6da22.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6da22.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_6da22.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_6da22.dir/objects.a @CMakeFiles\cmTC_6da22.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=memmove -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_6da22.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6da22.exe -Wl,--out-implib,libcmTC_6da22.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6da22.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setmode exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_26e47/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_26e47.dir\build.make CMakeFiles/cmTC_26e47.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26e47.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=setmode -O3 -DNDEBUG   -o CMakeFiles\cmTC_26e47.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_26e47.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_26e47.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_26e47.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_26e47.dir/objects.a @CMakeFiles\cmTC_26e47.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=setmode -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_26e47.dir/objects.a -Wl,--no-whole-archive  -o cmTC_26e47.exe -Wl,--out-implib,libcmTC_26e47.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_26e47.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_8946a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_8946a.dir\build.make CMakeFiles/cmTC_8946a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8946a.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strcasecmp -O3 -DNDEBUG   -o CMakeFiles\cmTC_8946a.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'strcasecmp'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_8946a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8946a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8946a.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_8946a.dir/objects.a @CMakeFiles\cmTC_8946a.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strcasecmp -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_8946a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8946a.exe -Wl,--out-implib,libcmTC_8946a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8946a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_0dc2c/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0dc2c.dir\build.make CMakeFiles/cmTC_0dc2c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0dc2c.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strchr -O3 -DNDEBUG   -o CMakeFiles\cmTC_0dc2c.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'strchr'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_0dc2c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0dc2c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0dc2c.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0dc2c.dir/objects.a @CMakeFiles\cmTC_0dc2c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strchr -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_0dc2c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0dc2c.exe -Wl,--out-implib,libcmTC_0dc2c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0dc2c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_552bc/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_552bc.dir\build.make CMakeFiles/cmTC_552bc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_552bc.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strrchr -O3 -DNDEBUG   -o CMakeFiles\cmTC_552bc.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'strrchr'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_552bc.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_552bc.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_552bc.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_552bc.dir/objects.a @CMakeFiles\cmTC_552bc.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strrchr -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_552bc.dir/objects.a -Wl,--no-whole-archive  -o cmTC_552bc.exe -Wl,--out-implib,libcmTC_552bc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_552bc.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e27ab/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e27ab.dir\build.make CMakeFiles/cmTC_e27ab.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e27ab.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strstr -O3 -DNDEBUG   -o CMakeFiles\cmTC_e27ab.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+<command-line>:0:23: warning: conflicting types for built-in function 'strstr'
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_e27ab.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e27ab.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e27ab.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_e27ab.dir/objects.a @CMakeFiles\cmTC_e27ab.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strstr -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_e27ab.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e27ab.exe -Wl,--out-implib,libcmTC_e27ab.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e27ab.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_79d5e/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_79d5e.dir\build.make CMakeFiles/cmTC_79d5e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79d5e.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strtol -O3 -DNDEBUG   -o CMakeFiles\cmTC_79d5e.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_79d5e.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_79d5e.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_79d5e.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_79d5e.dir/objects.a @CMakeFiles\cmTC_79d5e.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strtol -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_79d5e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_79d5e.exe -Wl,--out-implib,libcmTC_79d5e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_79d5e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_d4037/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_d4037.dir\build.make CMakeFiles/cmTC_d4037.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4037.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strtol -O3 -DNDEBUG   -o CMakeFiles\cmTC_d4037.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_d4037.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d4037.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_d4037.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_d4037.dir/objects.a @CMakeFiles\cmTC_d4037.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strtol -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_d4037.dir/objects.a -Wl,--no-whole-archive  -o cmTC_d4037.exe -Wl,--out-implib,libcmTC_d4037.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d4037.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_84efe/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_84efe.dir\build.make CMakeFiles/cmTC_84efe.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84efe.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strtoull -O3 -DNDEBUG   -o CMakeFiles\cmTC_84efe.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_84efe.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_84efe.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_84efe.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_84efe.dir/objects.a @CMakeFiles\cmTC_84efe.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=strtoull -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_84efe.dir/objects.a -Wl,--no-whole-archive  -o cmTC_84efe.exe -Wl,--out-implib,libcmTC_84efe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_84efe.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Determining if the function lfind exists passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_95b4f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_95b4f.dir\build.make CMakeFiles/cmTC_95b4f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95b4f.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=lfind -O3 -DNDEBUG   -o CMakeFiles\cmTC_95b4f.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_95b4f.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_95b4f.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_95b4f.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_95b4f.dir/objects.a @CMakeFiles\cmTC_95b4f.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=lfind -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_95b4f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_95b4f.exe -Wl,--out-implib,libcmTC_95b4f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_95b4f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_SNPRINTF succeeded with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_bb610/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_bb610.dir\build.make CMakeFiles/cmTC_bb610.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb610.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DHAVE_SNPRINTF -O3 -DNDEBUG   -o CMakeFiles\cmTC_bb610.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+Linking C executable cmTC_bb610.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bb610.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_bb610.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_bb610.dir/objects.a @CMakeFiles\cmTC_bb610.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DHAVE_SNPRINTF -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_bb610.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bb610.exe -Wl,--out-implib,libcmTC_bb610.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bb610.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <stdio.h>
+int main(void) {
+  char buf[10];
+  snprintf(buf, 10, "Test %d", 1);
+  return 0;
+}
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_2dfc1/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_2dfc1.dir\build.make CMakeFiles/cmTC_2dfc1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2dfc1.dir/TestEndianess.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_2dfc1.dir\TestEndianess.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\TestEndianess.c
+Linking C executable cmTC_2dfc1.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2dfc1.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_2dfc1.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_2dfc1.dir/objects.a @CMakeFiles\cmTC_2dfc1.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_2dfc1.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2dfc1.exe -Wl,--out-implib,libcmTC_2dfc1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2dfc1.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

@@ -1,7 +1,7 @@
 import cv2,threading,time,traceback,sys
 import numpy as np
 import multiprocessing
-
+from numpy import linalg as LA
 
 class ThreadImage(threading.Thread):
     current_grab = None
@@ -9,7 +9,7 @@ class ThreadImage(threading.Thread):
     cap = None
     def __init__(self):
         threading.Thread.__init__(self)
-        self.cap  = cv2.VideoCapture(0)
+        self.cap  = cv2.VideoCapture(1)
         print("Thread setup")
     def run(self):
         print("Thread running")
@@ -59,7 +59,11 @@ def array_ripper(param):
             for y2 in range(y,y+size,skip):
                 try:
                     rgb = array[x2][y2]
-                    sum_colors += rgb
+                    if rgb > 120:
+                        sum_colors += 255
+                    else:
+                        sum_colors += 0
+                    #sum_colors += rgb
                     count += 1
                 except:
                     #print("self.array",len(self.array))
@@ -94,6 +98,9 @@ def get_array3(pool2,img,localization_size):
     results = pool.map(array_ripper,work)
     for result in results:
         final_array.append(result)
+        #print("Result::",result)
+    #print("len(final_array)",len(final_array))
+    #print("len(final_array[0])",len(final_array[0]))
     return final_array
 
 
@@ -130,9 +137,9 @@ def matcher(receive):
                     #check_count += 1
                     floor_match_row.append(floor_matrix[index+xg][y+yg])
                     value = abs(floor_matrix[index+xg][y+yg]-grab_matrix[xg][yg])*distance_factor
-                    print("floor_matrix[index+xg][y+yg]",floor_matrix[index+xg][y+yg])
-                    print("grab_matrix[xg][yg]",grab_matrix[xg][yg])
-                    print("value",value)
+                    #print("floor_matrix[index+xg][y+yg]",floor_matrix[index+xg][y+yg])
+                    #print("grab_matrix[xg][yg]",grab_matrix[xg][yg])
+                    #print("value",value)
                 except:
                     traceback.print_exc()
 
@@ -215,6 +222,7 @@ def outline_region(min_location,matrix_values,floor_img,square_size):
     time1 = time.time()
     x1 = min_location[0]*square_size
     y1 = min_location[1]*square_size
+    print("X1:",x1,"Y1:",y1)
     #print("x1",x1)
     #print("y1",y1)
     x2 = x1+len(matrix_values[0])*square_size+square_size
@@ -261,9 +269,10 @@ if __name__ == "__main__":
     pool2 = multiprocessing.Pool(4)
     pool3 = multiprocessing.Pool(2)
     grab_matrix = None
-    floor = cv2.imread("floor150.png",cv2.IMREAD_GRAYSCALE)
+    floor = cv2.imread("floor30.png",cv2.IMREAD_GRAYSCALE)
     floor_rgb = cv2.cvtColor(floor,cv2.COLOR_GRAY2RGB)
-    imS = cv2.resize(floor_rgb, (141,600))
+    imS = cv2.resize(floor_rgb, (180,360))
+    #imS = floor_rgb
     tcopy = ThreadCopy(imS)
     tcopy.start()
     ti = ThreadImage()
@@ -271,8 +280,8 @@ if __name__ == "__main__":
     check = False
     rows = 0 
     cols = 0
-    size_grab = 55
-    mismatch = 150
+    size_grab = 50
+    mismatch = 30
     floor_matrix = get_array3(pool2,floor,mismatch)
     print("Floor matrix loaded")
     avg = 1
@@ -286,9 +295,6 @@ if __name__ == "__main__":
             tcopy.request_copy()
             
             grab = ti.grab_frame()
-            grab_rotate = rotateImage([90,grab])
-            horizontal_img = cv2.flip( grab_rotate, 0 )
-            grab = horizontal_img
             
             
             if not check:
@@ -303,14 +309,24 @@ if __name__ == "__main__":
                         
                 check = True
 
-            for x in range(0,cols,size_grab):
-                for y in range(0,rows,size_grab):
-                    cv2.rectangle(grab,(x,y),(x+size_grab,y+size_grab),5)
-
+            
+            
             time2 = time.time()
             time_grab = time2-time1
+            pts1 = np.float32([[182,25],[442,25],[1,358],[638,366]])
+            pts2 = np.float32([[0,0],[200,0],[0,400],[200,400]])
 
-            rotated_image = rotate(pool3,grab,4)
+            M = cv2.getPerspectiveTransform(pts1,pts2)
+
+            corrected = cv2.warpPerspective(grab,M,(200,400))
+
+            
+
+            for x in range(0,cols,size_grab):
+                for y in range(0,rows,size_grab):
+                    cv2.rectangle(corrected,(x,y),(x+size_grab,y+size_grab),5)
+
+            rotated_image = rotate(pool3,corrected,4)
 
             time3 = time.time()
             test_matricies = []
@@ -338,47 +354,46 @@ if __name__ == "__main__":
             font = cv2.FONT_HERSHEY_SIMPLEX
             final_matrix = test_matricies[min_x]
             average_array_display = np.zeros([size_grab*(len(final_matrix)),size_grab*(len(final_matrix[0])),1],np.uint8)
-            for x in range(len(final_matrix)):
-                for y in range(len(final_matrix[0])):
+            for y in range(len(final_matrix[0])):
+                for x in range(len(final_matrix)):
                     #print("final_matrix[x][y]",final_matrix[x][y])
                     color = int(final_matrix[x][y])
-                    cv2.rectangle(average_array_display,(x*size_grab,y*size_grab),(x*size_grab+size_grab,y*size_grab+size_grab),(color),-1)
-                    cv2.putText(average_array_display,str(color),(int(x*size_grab+size_grab/2),int(y*size_grab+size_grab/2 - 10)), font, 0.4,(0,0,0),1,cv2.LINE_AA)
-                    cv2.putText(average_array_display,str(color),(int(x*size_grab+size_grab/2),int(y*size_grab+size_grab/2 + 10)), font, 0.4,(255,255,255),1,cv2.LINE_AA)
-                    
+                    cv2.rectangle(average_array_display,(y*size_grab,x*size_grab),(y*size_grab+size_grab,x*size_grab+size_grab),(color),-1)
+                    cv2.putText(average_array_display,str(color),(int(y*size_grab+size_grab/2),int(x*size_grab+size_grab/2 - 10)), font, 0.4,(0,0,0),1,cv2.LINE_AA)
+                    cv2.putText(average_array_display,str(color),(int(y*size_grab+size_grab/2),int(x*size_grab+size_grab/2 + 10)), font, 0.4,(255,255,255),1,cv2.LINE_AA)
+                
                             
 
             
             #if min_score < 2200:
             time7 = time.time()
-            floor_with_match = outline_region(min_start_coordinate,test_matricies[min_x],tcopy.get_copy(),5)
+            floor_with_match = outline_region(min_start_coordinate,test_matricies[min_x],tcopy.get_copy(),15)
             
             
 
             percent_match = 100*((max_score-min_score)/max_score)
-            cv2.rectangle(floor_with_match,(0,0),(188,40),(255,255,255),-1)
+            cv2.rectangle(floor_with_match,(0,0),(188,20),(255,255,255),-1)
             text = str(min_score)
-            text2 = "%"+str(percent_match)
+            #text2 = "%"+str(percent_match)
             cv2.putText(floor_with_match,text,(12,12), font, 0.4,(0,0,0),1,cv2.LINE_AA)
-            cv2.putText(floor_with_match,text2,(12,24), font, 0.4,(0,0,0),1,cv2.LINE_AA)
+            #cv2.putText(floor_with_match,text2,(12,24), font, 0.4,(0,0,0),1,cv2.LINE_AA)
 
-            
-            temp = rotateImage([-90,rotated_image[min_x]])
-            temp2 = cv2.flip( temp, 1 )
+
             cv2.imshow("area",floor_with_match)
-            cv2.imshow("matrix",temp2)
+            cv2.imshow("matrix",rotated_image[min_x])
             cv2.imshow("average",average_array_display)
+            cv2.imshow("perspective",corrected)
 
             time8 = time.time()
             time_else = time8 - time7
 
             if(run_cnt%avg == 0 and run_cnt != 0):
                 
-                print("time_grab",time_grab)
-                print("time_get_array",time_get_array)
-                print("time_find_match",time_find_match)
-                print("time_else",time_else)
-                print("total time",str(time8-time1))
+                #print("time_grab",time_grab)
+                #print("time_get_array",time_get_array)
+                #print("time_find_match",time_find_match)
+                #print("time_else",time_else)
+                #print("total time",str(time8-time1))
                 avgeraged_time = float(avg_time/avg)
                 if avg == 1:
                     avgeraged_time = time8-time1

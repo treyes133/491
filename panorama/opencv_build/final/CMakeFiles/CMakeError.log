@@ -1,0 +1,2101 @@
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus.exe: warning: command line option '-Wmissing-prototypes' is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wmissing-prototypes'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_5c256/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5c256.dir\build.make CMakeFiles/cmTC_5c256.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c256.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -o CMakeFiles\cmTC_5c256.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+cc1plus.exe: warning: command line option '-Wmissing-prototypes' is valid for C/ObjC but not for C++
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking CXX executable cmTC_5c256.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5c256.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_5c256.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_5c256.dir/objects.a @CMakeFiles\cmTC_5c256.dir\objects1.rsp
+C:\MinGW\bin\g++.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_5c256.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5c256.exe -Wl,--out-implib,libcmTC_5c256.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5c256.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations  -Wstrict-prototypes'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_dce99/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_dce99.dir\build.make CMakeFiles/cmTC_dce99.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dce99.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wstrict-prototypes -o CMakeFiles\cmTC_dce99.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking CXX executable cmTC_dce99.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_dce99.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_dce99.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_dce99.dir/objects.a @CMakeFiles\cmTC_dce99.dir\objects1.rsp
+C:\MinGW\bin\g++.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_dce99.dir/objects.a -Wl,--no-whole-archive  -o cmTC_dce99.exe -Wl,--out-implib,libcmTC_dce99.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_dce99.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C'
+    Output line: 'cc1.exe: warning: command line option '-Wsign-promo' is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith  -Wsign-promo'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_57561/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_57561.dir\build.make CMakeFiles/cmTC_57561.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57561.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wsign-promo -o CMakeFiles\cmTC_57561.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+cc1.exe: warning: command line option '-Wsign-promo' is valid for C++/ObjC++ but not for C
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking C executable cmTC_57561.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_57561.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_57561.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_57561.dir/objects.a @CMakeFiles\cmTC_57561.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_57561.dir/objects.a -Wl,--no-whole-archive  -o cmTC_57561.exe -Wl,--out-implib,libcmTC_57561.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_57561.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C'
+    Output line: 'cc1.exe: warning: command line option '-Wno-delete-non-virtual-dtor' is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing  -Wno-delete-non-virtual-dtor'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_3c483/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_3c483.dir\build.make CMakeFiles/cmTC_3c483.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c483.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -o CMakeFiles\cmTC_3c483.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+cc1.exe: warning: command line option '-Wno-delete-non-virtual-dtor' is valid for C++/ObjC++ but not for C
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking C executable cmTC_3c483.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3c483.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_3c483.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_3c483.dir/objects.a @CMakeFiles\cmTC_3c483.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_3c483.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3c483.exe -Wl,--out-implib,libcmTC_3c483.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3c483.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-unnamed-type-template-args"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_fedb1/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_fedb1.dir\build.make CMakeFiles/cmTC_fedb1.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fedb1.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -o CMakeFiles\cmTC_fedb1.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-unnamed-type-template-args"
+Linking CXX executable cmTC_fedb1.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fedb1.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_fedb1.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_fedb1.dir/objects.a @CMakeFiles\cmTC_fedb1.dir\objects1.rsp
+C:\MinGW\bin\g++.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_fedb1.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fedb1.exe -Wl,--out-implib,libcmTC_fedb1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fedb1.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-unnamed-type-template-args"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing  -Wno-unnamed-type-template-args'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_08b0c/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_08b0c.dir\build.make CMakeFiles/cmTC_08b0c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08b0c.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-unnamed-type-template-args -o CMakeFiles\cmTC_08b0c.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-unnamed-type-template-args"
+Linking C executable cmTC_08b0c.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_08b0c.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_08b0c.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_08b0c.dir/objects.a @CMakeFiles\cmTC_08b0c.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_08b0c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_08b0c.exe -Wl,--out-implib,libcmTC_08b0c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_08b0c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C'
+    Output line: 'cc1.exe: warning: command line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -fvisibility-inlines-hidden'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_db9be/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_db9be.dir\build.make CMakeFiles/cmTC_db9be.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db9be.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -o CMakeFiles\cmTC_db9be.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+cc1.exe: warning: command line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking C executable cmTC_db9be.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_db9be.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_db9be.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_db9be.dir/objects.a @CMakeFiles\cmTC_db9be.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe    -O3 -DNDEBUG    -Wl,--whole-archive CMakeFiles\cmTC_db9be.dir/objects.a -Wl,--no-whole-archive  -o cmTC_db9be.exe -Wl,--out-implib,libcmTC_db9be.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_db9be.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_fd02b/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_fd02b.dir\build.make CMakeFiles/cmTC_fd02b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd02b.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG   -o CMakeFiles\cmTC_fd02b.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_fd02b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_fd02b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_fd02b.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_fd02b.dir/objects.a @CMakeFiles\cmTC_fd02b.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_fd02b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fd02b.exe -Wl,--out-implib,libcmTC_fd02b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_fd02b.dir\linklibs.rsp
+CMakeFiles\cmTC_fd02b.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `fseeko'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_fd02b.dir\build.make:98: recipe for target 'cmTC_fd02b.exe' failed
+mingw32-make.exe[1]: *** [cmTC_fd02b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_fd02b/fast' failed
+mingw32-make.exe: *** [cmTC_fd02b/fast] Error 2
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-shorten-64-to-32"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_0b8ec/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0b8ec.dir\build.make CMakeFiles/cmTC_0b8ec.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b8ec.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -Wno-shorten-64-to-32 -o CMakeFiles\cmTC_0b8ec.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-shorten-64-to-32"
+Linking C executable cmTC_0b8ec.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0b8ec.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0b8ec.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0b8ec.dir/objects.a @CMakeFiles\cmTC_0b8ec.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_0b8ec.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0b8ec.exe -Wl,--out-implib,libcmTC_0b8ec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0b8ec.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-shift-negative-value"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-shift-negative-value'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_7c295/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7c295.dir\build.make CMakeFiles/cmTC_7c295.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7c295.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security    -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-attributes -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations  -O3 -DNDEBUG   -Wno-shift-negative-value -o CMakeFiles\cmTC_7c295.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-shift-negative-value"
+Linking C executable cmTC_7c295.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7c295.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_7c295.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_7c295.dir/objects.a @CMakeFiles\cmTC_7c295.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security    -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-attributes -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_7c295.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7c295.exe -Wl,--out-implib,libcmTC_7c295.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7c295.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-implicit-fallthrough"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-implicit-fallthrough'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b456a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b456a.dir\build.make CMakeFiles/cmTC_b456a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b456a.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security     -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-attributes -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef  -O3 -DNDEBUG   -Wno-implicit-fallthrough -o CMakeFiles\cmTC_b456a.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-implicit-fallthrough"
+Linking C executable cmTC_b456a.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b456a.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b456a.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_b456a.dir/objects.a @CMakeFiles\cmTC_b456a.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security     -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-attributes -Wno-strict-prototypes -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_b456a.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b456a.exe -Wl,--out-implib,libcmTC_b456a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b456a.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining size of INT8 failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_5f95d/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5f95d.dir\build.make CMakeFiles/cmTC_5f95d.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f95d.dir/int8.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_5f95d.dir\int8.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int8.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int8.c:17:22: error: 'INT8' undeclared here (not in a function)
+ #define SIZE (sizeof(INT8))
+                      ^
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int8.c:19:12: note: in expansion of macro 'SIZE'
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles\cmTC_5f95d.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_5f95d.dir/int8.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5f95d.dir/int8.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_5f95d/fast' failed
+mingw32-make.exe: *** [cmTC_5f95d/fast] Error 2
+
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CheckTypeSize/int8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT16 failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_86e76/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_86e76.dir\build.make CMakeFiles/cmTC_86e76.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86e76.dir/int16.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_86e76.dir\int16.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int16.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int16.c:17:22: error: 'INT16' undeclared here (not in a function)
+ #define SIZE (sizeof(INT16))
+                      ^
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int16.c:19:12: note: in expansion of macro 'SIZE'
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles\cmTC_86e76.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_86e76.dir/int16.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_86e76.dir/int16.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_86e76/fast' failed
+mingw32-make.exe: *** [cmTC_86e76/fast] Error 2
+
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CheckTypeSize/int16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of INT32 failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_6ddf2/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_6ddf2.dir\build.make CMakeFiles/cmTC_6ddf2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6ddf2.dir/int32.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_6ddf2.dir\int32.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int32.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int32.c:17:22: error: 'INT32' undeclared here (not in a function)
+ #define SIZE (sizeof(INT32))
+                      ^
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CheckTypeSize\int32.c:19:12: note: in expansion of macro 'SIZE'
+   ('0' + ((SIZE / 10000)%10)),
+            ^
+CMakeFiles\cmTC_6ddf2.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_6ddf2.dir/int32.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_6ddf2.dir/int32.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_6ddf2/fast' failed
+mingw32-make.exe: *** [cmTC_6ddf2/fast] Error 2
+
+C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CheckTypeSize/int32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(INT32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function mmap exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_7f0f9/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_7f0f9.dir\build.make CMakeFiles/cmTC_7f0f9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f0f9.dir/CheckFunctionExists.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG   -o CMakeFiles\cmTC_7f0f9.dir\CheckFunctionExists.c.obj   -c "C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c"
+C:\Program Files\CMake\share\cmake-3.6\Modules\CheckFunctionExists.c:7:3: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+   CHECK_FUNCTION_EXISTS();
+   ^
+Linking C executable cmTC_7f0f9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7f0f9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_7f0f9.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_7f0f9.dir/objects.a @CMakeFiles\cmTC_7f0f9.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_7f0f9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7f0f9.exe -Wl,--out-implib,libcmTC_7f0f9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7f0f9.dir\linklibs.rsp
+CMakeFiles\cmTC_7f0f9.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text.startup.main+0xc): undefined reference to `mmap'
+collect2.exe: error: ld returned 1 exit status
+CMakeFiles\cmTC_7f0f9.dir\build.make:98: recipe for target 'cmTC_7f0f9.exe' failed
+mingw32-make.exe[1]: *** [cmTC_7f0f9.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_7f0f9/fast' failed
+mingw32-make.exe: *** [cmTC_7f0f9/fast] Error 2
+
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-misleading-indentation"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-misleading-indentation'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b7380/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b7380.dir\build.make CMakeFiles/cmTC_b7380.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7380.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-unused-but-set-variable -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-maybe-uninitialized -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast  -O3 -DNDEBUG   -Wno-misleading-indentation -o CMakeFiles\cmTC_b7380.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-misleading-indentation"
+Linking C executable cmTC_b7380.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b7380.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_b7380.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_b7380.dir/objects.a @CMakeFiles\cmTC_b7380.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes  -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-unused-but-set-variable -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-maybe-uninitialized -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_b7380.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b7380.exe -Wl,--out-implib,libcmTC_b7380.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b7380.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-pointer-compare"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-pointer-compare'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_0e65e/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0e65e.dir\build.make CMakeFiles/cmTC_0e65e.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e65e.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG   -Wno-pointer-compare -o CMakeFiles\cmTC_0e65e.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-pointer-compare"
+Linking C executable cmTC_0e65e.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0e65e.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_0e65e.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_0e65e.dir/objects.a @CMakeFiles\cmTC_0e65e.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_0e65e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_0e65e.exe -Wl,--out-implib,libcmTC_0e65e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_0e65e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1.exe: warning: unrecognized command line option "-Wno-absolute-value"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.c'
+    check option: ' -Wno-absolute-value'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_366e2/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_366e2.dir\build.make CMakeFiles/cmTC_366e2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_366e2.dir/src.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG   -Wno-absolute-value -o CMakeFiles\cmTC_366e2.dir\src.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.c:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1.exe: warning: unrecognized command line option "-Wno-absolute-value"
+Linking C executable cmTC_366e2.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_366e2.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_366e2.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_366e2.dir/objects.a @CMakeFiles\cmTC_366e2.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -Wno-implicit-function-declaration -Wno-uninitialized -Wno-missing-prototypes -Wno-unused-but-set-parameter -Wno-missing-declarations -Wno-unused -Wno-shadow -Wno-sign-compare -Wno-strict-overflow  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_366e2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_366e2.exe -Wl,--out-implib,libcmTC_366e2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_366e2.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-misleading-indentation"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-misleading-indentation'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e05b4/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e05b4.dir\build.make CMakeFiles/cmTC_e05b4.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e05b4.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations  -O3 -DNDEBUG   -Wno-misleading-indentation -o CMakeFiles\cmTC_e05b4.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-misleading-indentation"
+Linking CXX executable cmTC_e05b4.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e05b4.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_e05b4.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_e05b4.dir/objects.a @CMakeFiles\cmTC_e05b4.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_e05b4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e05b4.exe -Wl,--out-implib,libcmTC_e05b4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e05b4.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-suggest-override"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-suggest-override'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_6a1f2/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_6a1f2.dir\build.make CMakeFiles/cmTC_6a1f2.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a1f2.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-deprecated  -O3 -DNDEBUG   -Wno-suggest-override -o CMakeFiles\cmTC_6a1f2.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-suggest-override"
+Linking CXX executable cmTC_6a1f2.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6a1f2.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_6a1f2.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_6a1f2.dir/objects.a @CMakeFiles\cmTC_6a1f2.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-deprecated  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_6a1f2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_6a1f2.exe -Wl,--out-implib,libcmTC_6a1f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6a1f2.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-inconsistent-missing-override"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-inconsistent-missing-override'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_ed89b/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_ed89b.dir\build.make CMakeFiles/cmTC_ed89b.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ed89b.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-deprecated  -O3 -DNDEBUG   -Wno-inconsistent-missing-override -o CMakeFiles\cmTC_ed89b.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-inconsistent-missing-override"
+Linking CXX executable cmTC_ed89b.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_ed89b.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_ed89b.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_ed89b.dir/objects.a @CMakeFiles\cmTC_ed89b.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-deprecated  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_ed89b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ed89b.exe -Wl,--out-implib,libcmTC_ed89b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ed89b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-implicit-fallthrough"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-implicit-fallthrough'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_c9eca/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_c9eca.dir\build.make CMakeFiles/cmTC_c9eca.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c9eca.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-deprecated  -O3 -DNDEBUG   -Wno-implicit-fallthrough -o CMakeFiles\cmTC_c9eca.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-implicit-fallthrough"
+Linking CXX executable cmTC_c9eca.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c9eca.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c9eca.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_c9eca.dir/objects.a @CMakeFiles\cmTC_c9eca.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith -Wsign-promo  -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-shadow -Wno-unused -Wno-sign-compare -Wno-undef -Wno-missing-declarations -Wno-uninitialized -Wno-switch -Wno-parentheses -Wno-array-bounds -Wno-extra -Wno-deprecated-declarations -Wno-deprecated  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_c9eca.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c9eca.exe -Wl,--out-implib,libcmTC_c9eca.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c9eca.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the include file DShow.h exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_b665a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_b665a.dir\build.make CMakeFiles/cmTC_b665a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b665a.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_b665a.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+In file included from c:\mingw\include\dshow.h:7:0,
+                 from C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:
+c:\mingw\include\strmif.h:15:9: error: unknown type name 'LONGLONG'
+ typedef LONGLONG REFERENCE_TIME;
+         ^
+c:\mingw\include\strmif.h:623:2: error: unknown type name 'HRESULT'
+  HRESULT hrVPEStatus;
+  ^
+c:\mingw\include\strmif.h:624:2: error: unknown type name 'BOOL'
+  BOOL bDvdVolInvalid;
+  ^
+c:\mingw\include\strmif.h:625:2: error: unknown type name 'BOOL'
+  BOOL bDvdVolUnknown;
+  ^
+c:\mingw\include\strmif.h:626:2: error: unknown type name 'BOOL'
+  BOOL bNoLine21In;
+  ^
+c:\mingw\include\strmif.h:627:2: error: unknown type name 'BOOL'
+  BOOL bNoLine21Out;
+  ^
+c:\mingw\include\strmif.h:630:2: error: unknown type name 'DWORD'
+  DWORD dwFailedStreamsFlag;
+  ^
+c:\mingw\include\strmif.h:633:2: error: unknown type name 'GUID'
+  GUID macKDI;
+  ^
+c:\mingw\include\strmif.h:634:2: error: unknown type name 'GUID'
+  GUID guidCommandID;
+  ^
+c:\mingw\include\strmif.h:635:2: error: unknown type name 'DWORD'
+  DWORD dwSequence;
+  ^
+c:\mingw\include\strmif.h:636:2: error: unknown type name 'DWORD'
+  DWORD cbSizeData;
+  ^
+c:\mingw\include\strmif.h:637:2: error: unknown type name 'BYTE'
+  BYTE CommandData[4056];
+  ^
+c:\mingw\include\strmif.h:640:2: error: unknown type name 'BYTE'
+  BYTE Signature[256];
+  ^
+c:\mingw\include\strmif.h:643:2: error: unknown type name 'GUID'
+  GUID rApp;
+  ^
+c:\mingw\include\strmif.h:644:2: error: unknown type name 'GUID'
+  GUID guidStatusRequestID;
+  ^
+c:\mingw\include\strmif.h:645:2: error: unknown type name 'DWORD'
+  DWORD dwSequence;
+  ^
+c:\mingw\include\strmif.h:646:2: error: unknown type name 'DWORD'
+  DWORD cbSizeData;
+  ^
+c:\mingw\include\strmif.h:647:2: error: unknown type name 'BYTE'
+  BYTE StatusData[4056];
+  ^
+c:\mingw\include\strmif.h:650:2: error: unknown type name 'GUID'
+  GUID macKDI;
+  ^
+c:\mingw\include\strmif.h:651:2: error: unknown type name 'DWORD'
+  DWORD cbSizeData;
+  ^
+c:\mingw\include\strmif.h:652:2: error: unknown type name 'BYTE'
+  BYTE COPPStatus[4076];
+  ^
+c:\mingw\include\strmif.h:655:2: error: unknown type name 'GUID'
+  GUID majortype;
+  ^
+c:\mingw\include\strmif.h:656:2: error: unknown type name 'GUID'
+  GUID subtype;
+  ^
+c:\mingw\include\strmif.h:657:2: error: unknown type name 'BOOL'
+  BOOL bFixedSizeSamples;
+  ^
+c:\mingw\include\strmif.h:658:2: error: unknown type name 'BOOL'
+  BOOL bTemporalCompression;
+  ^
+c:\mingw\include\strmif.h:659:2: error: unknown type name 'ULONG'
+  ULONG lSampleSize;
+  ^
+c:\mingw\include\strmif.h:660:2: error: unknown type name 'GUID'
+  GUID formattype;
+  ^
+c:\mingw\include\strmif.h:661:2: error: unknown type name 'IUnknown'
+  IUnknown *pUnk;
+  ^
+c:\mingw\include\strmif.h:662:2: error: unknown type name 'ULONG'
+  ULONG cbFormat;
+  ^
+c:\mingw\include\strmif.h:663:2: error: unknown type name 'BYTE'
+  BYTE *pbFormat;
+  ^
+c:\mingw\include\strmif.h:666:2: error: unknown type name 'DWORD'
+  DWORD cbData;
+  ^
+c:\mingw\include\strmif.h:667:2: error: unknown type name 'DWORD'
+  DWORD dwTypeSpecificFlags;
+  ^
+c:\mingw\include\strmif.h:668:2: error: unknown type name 'DWORD'
+  DWORD dwSampleFlags;
+  ^
+c:\mingw\include\strmif.h:669:2: error: unknown type name 'LONG'
+  LONG lActual;
+  ^
+c:\mingw\include\strmif.h:672:2: error: unknown type name 'DWORD'
+  DWORD dwStreamId;
+  ^
+c:\mingw\include\strmif.h:674:2: error: unknown type name 'BYTE'
+  BYTE *pbBuffer;
+  ^
+c:\mingw\include\strmif.h:675:2: error: unknown type name 'LONG'
+  LONG cbBuffer;
+  ^
+c:\mingw\include\strmif.h:680:2: error: unknown type name 'DWORD'
+  DWORD dwStartCookie;
+  ^
+c:\mingw\include\strmif.h:681:2: error: unknown type name 'DWORD'
+  DWORD dwStopCookie;
+  ^
+c:\mingw\include\strmif.h:682:2: error: unknown type name 'DWORD'
+  DWORD dwFlags;
+  ^
+c:\mingw\include\strmif.h:685:8: error: unknown type name 'CLSID'
+  const CLSID *clsMajorType;
+        ^
+c:\mingw\include\strmif.h:686:8: error: unknown type name 'CLSID'
+  const CLSID *clsMinorType;
+        ^
+c:\mingw\include\strmif.h:690:2: error: unknown type name 'LPWSTR'
+  LPWSTR strName;
+  ^
+c:\mingw\include\strmif.h:691:2: error: unknown type name 'BOOL'
+  BOOL bRendered;
+  ^
+c:\mingw\include\strmif.h:692:2: error: unknown type name 'BOOL'
+  BOOL bOutput;
+  ^
+c:\mingw\include\strmif.h:693:2: error: unknown type name 'BOOL'
+  BOOL bZero;
+  ^
+c:\mingw\include\strmif.h:694:2: error: unknown type name 'BOOL'
+  BOOL bMany;
+  ^
+c:\mingw\include\strmif.h:695:8: error: unknown type name 'CLSID'
+  const CLSID *clsConnectsToFilter;
+        ^
+c:\mingw\include\strmif.h:696:8: error: unknown type name 'WCHAR'
+  const WCHAR *strConnectsToPin;
+        ^
+c:\mingw\include\strmif.h:697:2: error: unknown type name 'UINT'
+  UINT nMediaTypes;
+  ^
+c:\mingw\include\strmif.h:702:8: error: unknown type name 'CLSID'
+  const CLSID *clsID;
+        ^
+c:\mingw\include\strmif.h:703:8: error: unknown type name 'WCHAR'
+  const WCHAR *strName;
+        ^
+c:\mingw\include\strmif.h:704:2: error: unknown type name 'DWORD'
+  DWORD dwMerit;
+  ^
+c:\mingw\include\strmif.h:705:2: error: unknown type name 'UINT'
+  UINT nPins;
+  ^
+c:\mingw\include\strmif.h:709:2: error: unknown type name 'GUID'
+  GUID guid;
+  ^
+c:\mingw\include\strmif.h:710:2: error: unknown type name 'ULONG'
+  ULONG MinimumChannels;
+  ^
+c:\mingw\include\strmif.h:711:2: error: unknown type name 'ULONG'
+  ULONG MaximumChannels;
+  ^
+c:\mingw\include\strmif.h:712:2: error: unknown type name 'ULONG'
+  ULONG ChannelsGranularity;
+  ^
+c:\mingw\include\strmif.h:713:2: error: unknown type name 'ULONG'
+  ULONG MinimumBitsPerSample;
+  ^
+c:\mingw\include\strmif.h:714:2: error: unknown type name 'ULONG'
+  ULONG MaximumBitsPerSample;
+  ^
+c:\mingw\include\strmif.h:715:2: error: unknown type name 'ULONG'
+  ULONG BitsPerSampleGranularity;
+  ^
+c:\mingw\include\strmif.h:716:2: error: unknown type name 'ULONG'
+  ULONG MinimumSampleFrequency;
+  ^
+c:\mingw\include\strmif.h:717:2: error: unknown type name 'ULONG'
+  ULONG MaximumSampleFrequency;
+  ^
+c:\mingw\include\strmif.h:718:2: error: unknown type name 'ULONG'
+  ULONG SampleFrequencyGranularity;
+  ^
+c:\mingw\include\strmif.h:721:2: error: unknown type name 'GUID'
+  GUID guid;
+  ^
+c:\mingw\include\strmif.h:722:2: error: unknown type name 'DWORD'
+  DWORD dataLength;
+  ^
+c:\mingw\include\strmif.h:723:2: error: unknown type name 'DWORD'
+  DWORD reserved[3];
+  ^
+c:\mingw\include\strmif.h:726:2: error: unknown type name 'DWORD'
+  DWORD KeyType;
+  ^
+c:\mingw\include\strmif.h:727:2: error: unknown type name 'DWORD'
+  DWORD PaletteIndex;
+  ^
+c:\mingw\include\strmif.h:728:2: error: unknown type name 'COLORREF'
+  COLORREF LowColorValue;
+  ^
+c:\mingw\include\strmif.h:729:2: error: unknown type name 'COLORREF'
+  COLORREF HighColorValue;
+  ^
+c:\mingw\include\strmif.h:735:2: error: unknown type name 'DWORD'
+  DWORD dw1;
+  ^
+c:\mingw\include\strmif.h:736:2: error: unknown type name 'DWORD'
+  DWORD dw2;
+  ^
+c:\mingw\include\strmif.h:741:2: error: unknown type name 'LCID'
+  LCID Language;
+  ^
+c:\mingw\include\strmif.h:743:2: error: unknown type name 'BOOL'
+  BOOL fHasMultichannelInfo; 
+  ^
+c:\mingw\include\strmif.h:744:2: error: unknown type name 'DWORD'
+  DWORD dwFrequency;
+  ^
+c:\mingw\include\strmif.h:745:2: error: unknown type name 'BYTE'
+  BYTE bQuantization;
+  ^
+c:\mingw\include\strmif.h:746:2: error: unknown type name 'BYTE'
+  BYTE bNumberOfChannels;
+  ^
+c:\mingw\include\strmif.h:747:2: error: unknown type name 'DWORD'
+  DWORD dwReserved[2];
+  ^
+c:\mingw\include\strmif.h:750:2: error: unknown type name 'DWORD'
+  DWORD dwSize;
+  ^
+c:\mingw\include\strmif.h:751:2: error: unknown type name 'DWORD'
+  DWORD dwAudioCaps;
+  ^
+c:\mingw\include\strmif.h:758:2: error: unknown type name 'DWORD'
+  DWORD dwRes1;
+  ^
+c:\mingw\include\strmif.h:759:2: error: unknown type name 'DWORD'
+  DWORD dwRes2;
+  ^
+c:\mingw\include\strmif.h:760:2: error: unknown type name 'DWORD'
+  DWORD dwRes3;
+  ^
+c:\mingw\include\strmif.h:761:2: error: unknown type name 'DWORD'
+  DWORD dwRes4;
+  ^
+c:\mingw\include\strmif.h:769:2: error: unknown type name 'BYTE'
+  BYTE bHours;
+  ^
+c:\mingw\include\strmif.h:770:2: error: unknown type name 'BYTE'
+  BYTE bMinutes;
+  ^
+c:\mingw\include\strmif.h:771:2: error: unknown type name 'BYTE'
+  BYTE bSeconds;
+  ^
+c:\mingw\include\strmif.h:772:2: error: unknown type name 'BYTE'
+  BYTE bFrames;
+  ^
+c:\mingw\include\strmif.h:775:2: error: unknown type name 'BYTE'
+  BYTE bVersion;
+  ^
+c:\mingw\include\strmif.h:776:2: error: unknown type name 'BOOL'
+  BOOL fMasterOfCeremoniesInGuideVocal1;
+  ^
+c:\mingw\include\strmif.h:777:2: error: unknown type name 'BOOL'
+  BOOL fDuet;
+  ^
+c:\mingw\include\strmif.h:779:2: error: unknown type name 'WORD'
+  WORD wChannelContents[8];
+  ^
+c:\mingw\include\strmif.h:786:2: error: unknown type name 'BOOL'
+  BOOL fMixTo0;
+  ^
+c:\mingw\include\strmif.h:787:2: error: unknown type name 'BOOL'
+  BOOL fMixTo1;
+  ^
+c:\mingw\include\strmif.h:788:2: error: unknown type name 'BOOL'
+  BOOL fMix0InPhase;
+  ^
+c:\mingw\include\strmif.h:789:2: error: unknown type name 'BOOL'
+  BOOL fMix1InPhase;
+  ^
+c:\mingw\include\strmif.h:790:2: error: unknown type name 'DWORD'
+  DWORD dwSpeakerPosition;
+  ^
+c:\mingw\include\strmif.h:809:2: error: unknown type name 'ULONG'
+  ULONG TitleNum;
+  ^
+c:\mingw\include\strmif.h:810:2: error: unknown type name 'ULONG'
+  ULONG ChapterNum; 
+  ^
+c:\mingw\include\strmif.h:811:2: error: unknown type name 'ULONG'
+  ULONG TimeCode;
+  ^
+c:\mingw\include\strmif.h:814:2: error: unknown type name 'ULONG'
+  ULONG TitleNum;
+  ^
+c:\mingw\include\strmif.h:815:2: error: unknown type name 'ULONG'
+  ULONG ChapterNum;
+  ^
+c:\mingw\include\strmif.h:817:2: error: unknown type name 'ULONG'
+  ULONG TimeCodeFlags;
+  ^
+c:\mingw\include\strmif.h:822:2: error: unknown type name 'LCID'
+  LCID Language;
+  ^
+c:\mingw\include\strmif.h:826:2: error: unknown type name 'ULONG'
+  ULONG Hours1:4; 
+  ^
+c:\mingw\include\strmif.h:827:2: error: unknown type name 'ULONG'
+  ULONG Hours10:4; 
+  ^
+c:\mingw\include\strmif.h:828:2: error: unknown type name 'ULONG'
+  ULONG Minutes1:4; 
+  ^
+c:\mingw\include\strmif.h:829:2: error: unknown type name 'ULONG'
+  ULONG Minutes10:4; 
+  ^
+c:\mingw\include\strmif.h:830:2: error: unknown type name 'ULONG'
+  ULONG Seconds1:4; 
+  ^
+c:\mingw\include\strmif.h:831:2: error: unknown type name 'ULONG'
+  ULONG Seconds10:4; 
+  ^
+c:\mingw\include\strmif.h:832:2: error: unknown type name 'ULONG'
+  ULONG Frames1:4; 
+  ^
+c:\mingw\include\strmif.h:833:2: error: unknown type name 'ULONG'
+  ULONG Frames10:2; 
+  ^
+c:\mingw\include\strmif.h:834:2: error: unknown type name 'ULONG'
+  ULONG FrameRateCode:2; 
+  ^
+c:\mingw\include\strmif.h:837:2: error: unknown type name 'BOOL'
+  BOOL fPanscanPermitted;
+  ^
+c:\mingw\include\strmif.h:838:2: error: unknown type name 'BOOL'
+  BOOL fLetterboxPermitted;
+  ^
+c:\mingw\include\strmif.h:839:2: error: unknown type name 'ULONG'
+  ULONG ulAspectX;
+  ^
+c:\mingw\include\strmif.h:840:2: error: unknown type name 'ULONG'
+  ULONG ulAspectY;
+  ^
+c:\mingw\include\strmif.h:841:2: error: unknown type name 'ULONG'
+  ULONG ulFrameRate;
+  ^
+c:\mingw\include\strmif.h:842:2: error: unknown type name 'ULONG'
+  ULONG ulFrameHeight;
+  ^
+c:\mingw\include\strmif.h:844:2: error: unknown type name 'BOOL'
+  BOOL fLine21Field1InGOP;
+  ^
+c:\mingw\include\strmif.h:845:2: error: unknown type name 'BOOL'
+  BOOL fLine21Field2InGOP;
+  ^
+c:\mingw\include\strmif.h:846:2: error: unknown type name 'ULONG'
+  ULONG ulSourceResolutionX;
+  ^
+c:\mingw\include\strmif.h:847:2: error: unknown type name 'ULONG'
+  ULONG ulSourceResolutionY;
+  ^
+c:\mingw\include\strmif.h:848:2: error: unknown type name 'BOOL'
+  BOOL fIsSourceLetterboxed;
+  ^
+c:\mingw\include\strmif.h:849:2: error: unknown type name 'BOOL'
+  BOOL fIsFilmMode;
+  ^
+c:\mingw\include\strmif.h:852:2: error: unknown type name 'BOOL'
+  BOOL fCompatibleRegion[8];
+  ^
+c:\mingw\include\strmif.h:854:2: error: unknown type name 'BOOL'
+  BOOL fAudioPresent;
+  ^
+c:\mingw\include\strmif.h:856:2: error: unknown type name 'BOOL'
+  BOOL fSubpicturePresent;
+  ^
+c:\mingw\include\strmif.h:862:2: error: unknown type name 'ULONG'
+  ULONG ulNumberOfAudioStreams;
+  ^
+c:\mingw\include\strmif.h:865:2: error: unknown type name 'ULONG'
+  ULONG ulNumberOfSubpictureStreams;
+  ^
+c:\mingw\include\strmif.h:869:2: error: unknown type name 'DWORD'
+  DWORD dwDVAAuxSrc;
+  ^
+c:\mingw\include\strmif.h:870:2: error: unknown type name 'DWORD'
+  DWORD dwDVAAuxCtl;
+  ^
+c:\mingw\include\strmif.h:871:2: error: unknown type name 'DWORD'
+  DWORD dwDVAAuxSrc1;
+  ^
+c:\mingw\include\strmif.h:872:2: error: unknown type name 'DWORD'
+  DWORD dwDVAAuxCtl1;
+  ^
+c:\mingw\include\strmif.h:873:2: error: unknown type name 'DWORD'
+  DWORD dwDVVAuxSrc;
+  ^
+c:\mingw\include\strmif.h:874:2: error: unknown type name 'DWORD'
+  DWORD dwDVVAuxCtl;
+  ^
+c:\mingw\include\strmif.h:875:2: error: unknown type name 'DWORD'
+  DWORD dwDVReserved[2];
+  ^
+c:\mingw\include\strmif.h:892:2: error: unknown type name 'IBaseFilter'
+  IBaseFilter *pFilter;
+  ^
+c:\mingw\include\strmif.h:894:2: error: unknown type name 'WCHAR'
+  WCHAR achName[MAX_PIN_NAME];
+  ^
+c:\mingw\include\strmif.h:903:2: error: unknown type name 'CLSID'
+  CLSID clsMedium;
+  ^
+c:\mingw\include\strmif.h:904:2: error: unknown type name 'DWORD'
+  DWORD dw1;
+  ^
+c:\mingw\include\strmif.h:905:2: error: unknown type name 'DWORD'
+  DWORD dw2;
+  ^
+c:\mingw\include\strmif.h:908:2: error: unknown type name 'DWORD'
+  DWORD dwFlags;
+  ^
+c:\mingw\include\strmif.h:909:2: error: unknown type name 'UINT'
+  UINT cInstances;
+  ^
+c:\mingw\include\strmif.h:910:2: error: unknown type name 'UINT'
+  UINT nMediaTypes; 
+  ^
+c:\mingw\include\strmif.h:912:2: error: unknown type name 'UINT'
+  UINT nMediums;
+  ^
+c:\mingw\include\strmif.h:914:8: error: unknown type name 'CLSID'
+  const CLSID *clsPinCategory;
+        ^
+c:\mingw\include\strmif.h:917:2: error: unknown type name 'DWORD'
+  DWORD dwVersion;
+  ^
+c:\mingw\include\strmif.h:918:2: error: unknown type name 'DWORD'
+  DWORD dwMerit;
+  ^
+c:\mingw\include\strmif.h:921:4: error: unknown type name 'ULONG'
+    ULONG cPins;
+    ^
+c:\mingw\include\strmif.h:925:4: error: unknown type name 'ULONG'
+    ULONG cPins2;
+    ^
+c:\mingw\include\strmif.h:931:2: error: unknown type name 'ULONG'
+  ULONG stream_id;
+  ^
+c:\mingw\include\strmif.h:932:2: error: unknown type name 'DWORD'
+  DWORD dwMediaSampleContent;
+  ^
+c:\mingw\include\strmif.h:933:2: error: unknown type name 'ULONG'
+  ULONG ulSubstreamFilterValue;
+  ^
+c:\mingw\include\strmif.h:944:2: error: unknown type name 'WORD'
+  WORD wFrameRate;
+  ^
+c:\mingw\include\strmif.h:945:2: error: unknown type name 'WORD'
+  WORD wFrameFract;
+  ^
+c:\mingw\include\strmif.h:946:2: error: unknown type name 'DWORD'
+  DWORD dwFrames;
+  ^
+c:\mingw\include\strmif.h:953:2: error: unknown type name 'LONGLONG'
+  LONGLONG qwTick;
+  ^
+c:\mingw\include\strmif.h:955:2: error: unknown type name 'DWORD'
+  DWORD dwUser;
+  ^
+c:\mingw\include\strmif.h:956:2: error: unknown type name 'DWORD'
+  DWORD dwFlags;
+  ^
+c:\mingw\include\strmif.h:966:2: error: unknown type name 'GUID'
+  GUID guid;
+  ^
+c:\mingw\include\strmif.h:967:2: error: unknown type name 'ULONG'
+  ULONG VideoStandard;
+  ^
+c:\mingw\include\strmif.h:968:2: error: unknown type name 'SIZE'
+  SIZE InputSize;
+  ^
+c:\mingw\include\strmif.h:969:2: error: unknown type name 'SIZE'
+  SIZE MinCroppingSize;
+  ^
+c:\mingw\include\strmif.h:970:2: error: unknown type name 'SIZE'
+  SIZE MaxCroppingSize;
+  ^
+c:\mingw\include\strmif.h:975:2: error: unknown type name 'SIZE'
+  SIZE MinOutputSize;
+  ^
+c:\mingw\include\strmif.h:976:2: error: unknown type name 'SIZE'
+  SIZE MaxOutputSize;
+  ^
+c:\mingw\include\strmif.h:983:2: error: unknown type name 'LONGLONG'
+  LONGLONG MinFrameInterval;
+  ^
+c:\mingw\include\strmif.h:984:2: error: unknown type name 'LONGLONG'
+  LONGLONG MaxFrameInterval;
+  ^
+c:\mingw\include\strmif.h:985:2: error: unknown type name 'LONG'
+  LONG MinBitsPerSecond;
+  ^
+c:\mingw\include\strmif.h:986:2: error: unknown type name 'LONG'
+  LONG MaxBitsPerSecond;
+  ^
+c:\mingw\include\strmif.h:989:2: error: unknown type name 'DWORD'
+  DWORD dwFlags;
+  ^
+c:\mingw\include\strmif.h:990:2: error: unknown type name 'LPBITMAPINFOHEADER'
+  LPBITMAPINFOHEADER lpHdr;
+  ^
+c:\mingw\include\strmif.h:991:2: error: unknown type name 'LPDDPIXELFORMAT'
+  LPDDPIXELFORMAT lpPixFmt;
+  ^
+c:\mingw\include\strmif.h:992:2: error: unknown type name 'SIZE'
+  SIZE szAspectRatio;
+  ^
+c:\mingw\include\strmif.h:993:2: error: unknown type name 'DWORD'
+  DWORD dwMinBuffers;
+  ^
+c:\mingw\include\strmif.h:994:2: error: unknown type name 'DWORD'
+  DWORD dwMaxBuffers;
+  ^
+c:\mingw\include\strmif.h:995:2: error: unknown type name 'DWORD'
+  DWORD dwInterlaceFlags;
+  ^
+c:\mingw\include\strmif.h:996:2: error: unknown type name 'SIZE'
+  SIZE szNativeSize;
+  ^
+c:\mingw\include\strmif.h:1015:2: error: unknown type name 'DWORD'
+  DWORD dwSize;
+  ^
+c:\mingw\include\strmif.h:1016:2: error: unknown type name 'DWORD'
+  DWORD dwNumPreviousOutputFrames;
+  ^
+c:\mingw\include\strmif.h:1017:2: error: unknown type name 'DWORD'
+  DWORD dwNumForwardRefSamples;
+  ^
+c:\mingw\include\strmif.h:1018:2: error: unknown type name 'DWORD'
+  DWORD dwNumBackwardRefSamples;
+  ^
+c:\mingw\include\strmif.h:1022:2: error: unknown type name 'DWORD'
+  DWORD dwNumerator;
+  ^
+c:\mingw\include\strmif.h:1023:2: error: unknown type name 'DWORD'
+  DWORD dwDenominator;
+  ^
+c:\mingw\include\strmif.h:1026:2: error: unknown type name 'GUID'
+  GUID *pGUID;
+  ^
+c:\mingw\include\strmif.h:1027:2: error: unknown type name 'GUID'
+  GUID GUID;
+  ^
+c:\mingw\include\strmif.h:1031:2: error: unknown type name 'RECT'
+  RECT rcMonitor;
+  ^
+c:\mingw\include\strmif.h:1032:2: error: unknown type name 'HMONITOR'
+  HMONITOR hMon;
+  ^
+c:\mingw\include\strmif.h:1033:2: error: unknown type name 'DWORD'
+  DWORD dwFlags;
+  ^
+c:\mingw\include\strmif.h:1034:2: error: unknown type name 'wchar_t'
+  wchar_t szDevice[32];
+  ^
+c:\mingw\include\strmif.h:1035:2: error: unknown type name 'wchar_t'
+  wchar_t szDescription[256];
+  ^
+c:\mingw\include\strmif.h:1051:2: error: unknown type name 'DWORD'
+  DWORD dwSize;
+  ^
+c:\mingw\include\strmif.h:1052:2: error: unknown type name 'DWORD'
+  DWORD dwSampleWidth;
+  ^
+c:\mingw\include\strmif.h:1053:2: error: unknown type name 'DWORD'
+  DWORD dwSampleHeight;
+  ^
+c:\mingw\include\strmif.h:1054:2: error: unknown type name 'BOOL'
+  BOOL SingleFieldPerSample;
+  ^
+c:\mingw\include\strmif.h:1055:2: error: unknown type name 'DWORD'
+  DWORD dwFourCC;
+  ^
+c:\mingw\include\strmif.h: In function 'DECLARE_INTERFACE_':
+c:\mingw\include\strmif.h:1074:12: error: 'QueryInterface' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+            ^
+c:\mingw\include\strmif.h:1074:12: note: each undeclared identifier is reported only once for each function it appears in
+c:\mingw\include\strmif.h:1074:28: error: 'THIS_' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                            ^
+c:\mingw\include\strmif.h:1074:34: error: expected ')' before 'REFIID'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1074:49: error: expected ';' before 'PURE'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1075:13: error: 'ULONG' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+             ^
+c:\mingw\include\strmif.h:1075:19: error: 'AddRef' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1075:27: error: 'THIS' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                           ^
+c:\mingw\include\strmif.h:1075:33: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                                 ^
+c:\mingw\include\strmif.h:1076:19: error: 'Release' undeclared (first use in this function)
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1076:34: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1077:13: error: 'HRESULT' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_AvailableTVFormats)(THIS_ long*) PURE;
+             ^
+c:\mingw\include\strmif.h:1077:21: error: 'get_AvailableTVFormats' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_AvailableTVFormats)(THIS_ long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1077:51: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,get_AvailableTVFormats)(THIS_ long*) PURE;
+                                                   ^
+c:\mingw\include\strmif.h:1077:58: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_AvailableTVFormats)(THIS_ long*) PURE;
+                                                          ^
+c:\mingw\include\strmif.h:1078:21: error: 'get_HorizontalLocked' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_HorizontalLocked)(THIS_ long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1078:49: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,get_HorizontalLocked)(THIS_ long*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1078:56: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_HorizontalLocked)(THIS_ long*) PURE;
+                                                        ^
+c:\mingw\include\strmif.h:1079:21: error: 'get_NumberOfLines' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_NumberOfLines)(THIS_ long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1079:46: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,get_NumberOfLines)(THIS_ long*) PURE;
+                                              ^
+c:\mingw\include\strmif.h:1079:53: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_NumberOfLines)(THIS_ long*) PURE;
+                                                     ^
+c:\mingw\include\strmif.h:1080:21: error: 'get_OutputEnable' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_OutputEnable)(THIS_ long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1080:45: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,get_OutputEnable)(THIS_ long*) PURE;
+                                             ^
+c:\mingw\include\strmif.h:1080:52: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_OutputEnable)(THIS_ long*) PURE;
+                                                    ^
+c:\mingw\include\strmif.h:1081:21: error: 'get_TVFormat' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_TVFormat)(THIS_ long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1081:41: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,get_TVFormat)(THIS_ long*) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1081:48: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_TVFormat)(THIS_ long*) PURE;
+                                                ^
+c:\mingw\include\strmif.h:1082:21: error: 'get_VCRHorizontalLocking' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_VCRHorizontalLocking)(THIS_ long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1082:53: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,get_VCRHorizontalLocking)(THIS_ long*) PURE;
+                                                     ^
+c:\mingw\include\strmif.h:1082:60: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_VCRHorizontalLocking)(THIS_ long*) PURE;
+                                                            ^
+c:\mingw\include\strmif.h:1083:21: error: 'put_OutputEnable' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_OutputEnable)(THIS_ long) PURE;
+                     ^
+c:\mingw\include\strmif.h:1083:45: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,put_OutputEnable)(THIS_ long) PURE;
+                                             ^
+c:\mingw\include\strmif.h:1083:51: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_OutputEnable)(THIS_ long) PURE;
+                                                   ^
+c:\mingw\include\strmif.h:1084:21: error: 'put_TVFormat' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_TVFormat)(THIS_ long) PURE;
+                     ^
+c:\mingw\include\strmif.h:1084:41: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,put_TVFormat)(THIS_ long) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1084:47: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_TVFormat)(THIS_ long) PURE;
+                                               ^
+c:\mingw\include\strmif.h:1085:21: error: 'put_VCRHorizontalLocking' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_VCRHorizontalLocking)(THIS_ long) PURE;
+                     ^
+c:\mingw\include\strmif.h:1085:53: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,put_VCRHorizontalLocking)(THIS_ long) PURE;
+                                                     ^
+c:\mingw\include\strmif.h:1085:59: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_VCRHorizontalLocking)(THIS_ long) PURE;
+                                                           ^
+c:\mingw\include\strmif.h: At top level:
+c:\mingw\include\strmif.h:1089:1: error: redefinition of 'DECLARE_INTERFACE_'
+ DECLARE_INTERFACE_(IAMAudioInputMixer, IUnknown)
+ ^
+c:\mingw\include\strmif.h:1072:1: note: previous definition of 'DECLARE_INTERFACE_' was here
+ DECLARE_INTERFACE_(IAMAnalogVideoDecoder, IUnknown)
+ ^
+c:\mingw\include\strmif.h: In function 'DECLARE_INTERFACE_':
+c:\mingw\include\strmif.h:1091:12: error: 'QueryInterface' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+            ^
+c:\mingw\include\strmif.h:1091:28: error: 'THIS_' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                            ^
+c:\mingw\include\strmif.h:1091:34: error: expected ')' before 'REFIID'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1091:49: error: expected ';' before 'PURE'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1092:13: error: 'ULONG' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+             ^
+c:\mingw\include\strmif.h:1092:19: error: 'AddRef' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1092:27: error: 'THIS' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                           ^
+c:\mingw\include\strmif.h:1092:33: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                                 ^
+c:\mingw\include\strmif.h:1093:19: error: 'Release' undeclared (first use in this function)
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1093:34: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1094:13: error: 'HRESULT' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Bass)(THIS_ double*) PURE;
+             ^
+c:\mingw\include\strmif.h:1094:21: error: 'get_Bass' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Bass)(THIS_ double*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1094:37: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,get_Bass)(THIS_ double*) PURE;
+                                     ^
+c:\mingw\include\strmif.h:1094:46: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_Bass)(THIS_ double*) PURE;
+                                              ^
+c:\mingw\include\strmif.h:1095:21: error: 'get_BassRange' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_BassRange)(THIS_ double*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1095:42: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,get_BassRange)(THIS_ double*) PURE;
+                                          ^
+c:\mingw\include\strmif.h:1095:51: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_BassRange)(THIS_ double*) PURE;
+                                                   ^
+c:\mingw\include\strmif.h:1096:21: error: 'get_Enable' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Enable)(THIS_ BOOL*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1096:39: error: expected ')' before 'BOOL'
+  STDMETHOD_(HRESULT,get_Enable)(THIS_ BOOL*) PURE;
+                                       ^
+c:\mingw\include\strmif.h:1096:46: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_Enable)(THIS_ BOOL*) PURE;
+                                              ^
+c:\mingw\include\strmif.h:1097:21: error: 'get_Loudness' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Loudness)(THIS_ BOOL*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1097:41: error: expected ')' before 'BOOL'
+  STDMETHOD_(HRESULT,get_Loudness)(THIS_ BOOL*) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1097:48: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_Loudness)(THIS_ BOOL*) PURE;
+                                                ^
+c:\mingw\include\strmif.h:1098:21: error: 'get_MixLevel' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_MixLevel)(THIS_ double*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1098:41: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,get_MixLevel)(THIS_ double*) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1098:50: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_MixLevel)(THIS_ double*) PURE;
+                                                  ^
+c:\mingw\include\strmif.h:1099:21: error: 'get_Mono' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Mono)(THIS_ BOOL*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1099:37: error: expected ')' before 'BOOL'
+  STDMETHOD_(HRESULT,get_Mono)(THIS_ BOOL*) PURE;
+                                     ^
+c:\mingw\include\strmif.h:1099:44: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_Mono)(THIS_ BOOL*) PURE;
+                                            ^
+c:\mingw\include\strmif.h:1100:21: error: 'get_Pan' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Pan)(THIS_ double*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1100:36: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,get_Pan)(THIS_ double*) PURE;
+                                    ^
+c:\mingw\include\strmif.h:1100:45: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_Pan)(THIS_ double*) PURE;
+                                             ^
+c:\mingw\include\strmif.h:1101:21: error: 'get_Treble' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_Treble)(THIS_ double*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1101:39: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,get_Treble)(THIS_ double*) PURE;
+                                       ^
+c:\mingw\include\strmif.h:1101:48: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_Treble)(THIS_ double*) PURE;
+                                                ^
+c:\mingw\include\strmif.h:1102:21: error: 'get_TrebleRange' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,get_TrebleRange)(THIS_ double*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1102:44: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,get_TrebleRange)(THIS_ double*) PURE;
+                                            ^
+c:\mingw\include\strmif.h:1102:53: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,get_TrebleRange)(THIS_ double*) PURE;
+                                                     ^
+c:\mingw\include\strmif.h:1103:21: error: 'put_Bass' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_Bass)(THIS_ double) PURE;
+                     ^
+c:\mingw\include\strmif.h:1103:37: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,put_Bass)(THIS_ double) PURE;
+                                     ^
+c:\mingw\include\strmif.h:1103:45: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_Bass)(THIS_ double) PURE;
+                                             ^
+c:\mingw\include\strmif.h:1104:21: error: 'put_Enable' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_Enable)(THIS_ BOOL) PURE;
+                     ^
+c:\mingw\include\strmif.h:1104:39: error: expected ')' before 'BOOL'
+  STDMETHOD_(HRESULT,put_Enable)(THIS_ BOOL) PURE;
+                                       ^
+c:\mingw\include\strmif.h:1104:45: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_Enable)(THIS_ BOOL) PURE;
+                                             ^
+c:\mingw\include\strmif.h:1105:21: error: 'put_Loudness' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_Loudness)(THIS_ BOOL) PURE;
+                     ^
+c:\mingw\include\strmif.h:1105:41: error: expected ')' before 'BOOL'
+  STDMETHOD_(HRESULT,put_Loudness)(THIS_ BOOL) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1105:47: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_Loudness)(THIS_ BOOL) PURE;
+                                               ^
+c:\mingw\include\strmif.h:1106:21: error: 'put_MixLevel' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_MixLevel)(THIS_ double) PURE;
+                     ^
+c:\mingw\include\strmif.h:1106:41: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,put_MixLevel)(THIS_ double) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1106:49: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_MixLevel)(THIS_ double) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1107:21: error: 'put_Mono' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_Mono)(THIS_ BOOL) PURE;
+                     ^
+c:\mingw\include\strmif.h:1107:37: error: expected ')' before 'BOOL'
+  STDMETHOD_(HRESULT,put_Mono)(THIS_ BOOL) PURE;
+                                     ^
+c:\mingw\include\strmif.h:1107:43: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_Mono)(THIS_ BOOL) PURE;
+                                           ^
+c:\mingw\include\strmif.h:1108:21: error: 'put_Pan' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_Pan)(THIS_ double) PURE;
+                     ^
+c:\mingw\include\strmif.h:1108:36: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,put_Pan)(THIS_ double) PURE;
+                                    ^
+c:\mingw\include\strmif.h:1108:44: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_Pan)(THIS_ double) PURE;
+                                            ^
+c:\mingw\include\strmif.h:1109:21: error: 'put_Treble' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,put_Treble)(THIS_ double) PURE;
+                     ^
+c:\mingw\include\strmif.h:1109:39: error: expected ')' before 'double'
+  STDMETHOD_(HRESULT,put_Treble)(THIS_ double) PURE;
+                                       ^
+c:\mingw\include\strmif.h:1109:47: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,put_Treble)(THIS_ double) PURE;
+                                               ^
+c:\mingw\include\strmif.h: At top level:
+c:\mingw\include\strmif.h:1113:1: error: redefinition of 'DECLARE_INTERFACE_'
+ DECLARE_INTERFACE_(IAMAudioRendererStats, IUnknown)
+ ^
+c:\mingw\include\strmif.h:1072:1: note: previous definition of 'DECLARE_INTERFACE_' was here
+ DECLARE_INTERFACE_(IAMAnalogVideoDecoder, IUnknown)
+ ^
+c:\mingw\include\strmif.h: In function 'DECLARE_INTERFACE_':
+c:\mingw\include\strmif.h:1115:12: error: 'QueryInterface' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+            ^
+c:\mingw\include\strmif.h:1115:28: error: 'THIS_' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                            ^
+c:\mingw\include\strmif.h:1115:34: error: expected ')' before 'REFIID'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1115:49: error: expected ';' before 'PURE'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1116:13: error: 'ULONG' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+             ^
+c:\mingw\include\strmif.h:1116:19: error: 'AddRef' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1116:27: error: 'THIS' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                           ^
+c:\mingw\include\strmif.h:1116:33: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                                 ^
+c:\mingw\include\strmif.h:1117:19: error: 'Release' undeclared (first use in this function)
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1117:34: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1118:13: error: 'HRESULT' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,GetStatParam)(THIS_ DWORD,DWORD*,DWORD*) PURE;
+             ^
+c:\mingw\include\strmif.h:1118:21: error: 'GetStatParam' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,GetStatParam)(THIS_ DWORD,DWORD*,DWORD*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1118:41: error: expected ')' before 'DWORD'
+  STDMETHOD_(HRESULT,GetStatParam)(THIS_ DWORD,DWORD*,DWORD*) PURE;
+                                         ^
+c:\mingw\include\strmif.h:1118:62: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,GetStatParam)(THIS_ DWORD,DWORD*,DWORD*) PURE;
+                                                              ^
+c:\mingw\include\strmif.h: At top level:
+c:\mingw\include\strmif.h:1122:1: error: redefinition of 'DECLARE_INTERFACE_'
+ DECLARE_INTERFACE_(IAMBufferNegotiation, IUnknown)
+ ^
+c:\mingw\include\strmif.h:1072:1: note: previous definition of 'DECLARE_INTERFACE_' was here
+ DECLARE_INTERFACE_(IAMAnalogVideoDecoder, IUnknown)
+ ^
+c:\mingw\include\strmif.h: In function 'DECLARE_INTERFACE_':
+c:\mingw\include\strmif.h:1124:12: error: 'QueryInterface' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+            ^
+c:\mingw\include\strmif.h:1124:28: error: 'THIS_' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                            ^
+c:\mingw\include\strmif.h:1124:34: error: expected ')' before 'REFIID'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1124:49: error: expected ';' before 'PURE'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1125:13: error: 'ULONG' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+             ^
+c:\mingw\include\strmif.h:1125:19: error: 'AddRef' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1125:27: error: 'THIS' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                           ^
+c:\mingw\include\strmif.h:1125:33: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                                 ^
+c:\mingw\include\strmif.h:1126:19: error: 'Release' undeclared (first use in this function)
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1126:34: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1127:13: error: 'HRESULT' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,GetAllocatorProperties)(THIS_ ALLOCATOR_PROPERTIES*) PURE;
+             ^
+c:\mingw\include\strmif.h:1127:21: error: 'GetAllocatorProperties' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,GetAllocatorProperties)(THIS_ ALLOCATOR_PROPERTIES*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1127:51: error: expected ')' before 'ALLOCATOR_PROPERTIES'
+  STDMETHOD_(HRESULT,GetAllocatorProperties)(THIS_ ALLOCATOR_PROPERTIES*) PURE;
+                                                   ^
+c:\mingw\include\strmif.h:1127:74: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,GetAllocatorProperties)(THIS_ ALLOCATOR_PROPERTIES*) PURE;
+                                                                          ^
+c:\mingw\include\strmif.h:1128:21: error: 'SuggestAllocatorProperties' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,SuggestAllocatorProperties)(THIS_ const ALLOCATOR_PROPERTIES*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1128:55: error: expected ')' before 'const'
+  STDMETHOD_(HRESULT,SuggestAllocatorProperties)(THIS_ const ALLOCATOR_PROPERTIES*) PURE;
+                                                       ^
+c:\mingw\include\strmif.h:1128:84: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,SuggestAllocatorProperties)(THIS_ const ALLOCATOR_PROPERTIES*) PURE;
+                                                                                    ^
+c:\mingw\include\strmif.h: At top level:
+c:\mingw\include\strmif.h:1132:1: error: redefinition of 'DECLARE_INTERFACE_'
+ DECLARE_INTERFACE_(IAMCameraControl, IUnknown)
+ ^
+c:\mingw\include\strmif.h:1072:1: note: previous definition of 'DECLARE_INTERFACE_' was here
+ DECLARE_INTERFACE_(IAMAnalogVideoDecoder, IUnknown)
+ ^
+c:\mingw\include\strmif.h: In function 'DECLARE_INTERFACE_':
+c:\mingw\include\strmif.h:1134:12: error: 'QueryInterface' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+            ^
+c:\mingw\include\strmif.h:1134:28: error: 'THIS_' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                            ^
+c:\mingw\include\strmif.h:1134:34: error: expected ')' before 'REFIID'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1134:49: error: expected ';' before 'PURE'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1135:13: error: 'ULONG' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+             ^
+c:\mingw\include\strmif.h:1135:19: error: 'AddRef' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1135:27: error: 'THIS' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                           ^
+c:\mingw\include\strmif.h:1135:33: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                                 ^
+c:\mingw\include\strmif.h:1136:19: error: 'Release' undeclared (first use in this function)
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1136:34: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1137:13: error: 'HRESULT' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,Get)(THIS_ long,long*,long*) PURE;
+             ^
+c:\mingw\include\strmif.h:1137:21: error: 'Get' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,Get)(THIS_ long,long*,long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1137:32: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,Get)(THIS_ long,long*,long*) PURE;
+                                ^
+c:\mingw\include\strmif.h:1137:50: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,Get)(THIS_ long,long*,long*) PURE;
+                                                  ^
+c:\mingw\include\strmif.h:1138:21: error: 'GetRange' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,GetRange)(THIS_ long,long*,long*,long*,long*,long*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1138:37: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,GetRange)(THIS_ long,long*,long*,long*,long*,long*) PURE;
+                                     ^
+c:\mingw\include\strmif.h:1138:73: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,GetRange)(THIS_ long,long*,long*,long*,long*,long*) PURE;
+                                                                         ^
+c:\mingw\include\strmif.h:1139:21: error: 'Set' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,Set)(THIS_ long,long,long) PURE;
+                     ^
+c:\mingw\include\strmif.h:1139:32: error: expected ')' before 'long'
+  STDMETHOD_(HRESULT,Set)(THIS_ long,long,long) PURE;
+                                ^
+c:\mingw\include\strmif.h:1139:48: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,Set)(THIS_ long,long,long) PURE;
+                                                ^
+c:\mingw\include\strmif.h: At top level:
+c:\mingw\include\strmif.h:1144:1: error: redefinition of 'DECLARE_INTERFACE_'
+ DECLARE_INTERFACE_(IAMCertifiedOutputProtection, IUnknown)
+ ^
+c:\mingw\include\strmif.h:1072:1: note: previous definition of 'DECLARE_INTERFACE_' was here
+ DECLARE_INTERFACE_(IAMAnalogVideoDecoder, IUnknown)
+ ^
+c:\mingw\include\strmif.h: In function 'DECLARE_INTERFACE_':
+c:\mingw\include\strmif.h:1146:12: error: 'QueryInterface' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+            ^
+c:\mingw\include\strmif.h:1146:28: error: 'THIS_' undeclared (first use in this function)
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                            ^
+c:\mingw\include\strmif.h:1146:34: error: expected ')' before 'REFIID'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1146:49: error: expected ';' before 'PURE'
+  STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1147:13: error: 'ULONG' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+             ^
+c:\mingw\include\strmif.h:1147:19: error: 'AddRef' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1147:27: error: 'THIS' undeclared (first use in this function)
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                           ^
+c:\mingw\include\strmif.h:1147:33: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+                                 ^
+c:\mingw\include\strmif.h:1148:19: error: 'Release' undeclared (first use in this function)
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                   ^
+c:\mingw\include\strmif.h:1148:34: error: expected ';' before 'PURE'
+  STDMETHOD_(ULONG,Release)(THIS) PURE;
+                                  ^
+c:\mingw\include\strmif.h:1149:13: error: 'HRESULT' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,KeyExchange)(THIS_ GUID*,BYTE**,DWORD*) PURE;
+             ^
+c:\mingw\include\strmif.h:1149:21: error: 'KeyExchange' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,KeyExchange)(THIS_ GUID*,BYTE**,DWORD*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1149:40: error: expected ')' before 'GUID'
+  STDMETHOD_(HRESULT,KeyExchange)(THIS_ GUID*,BYTE**,DWORD*) PURE;
+                                        ^
+c:\mingw\include\strmif.h:1149:61: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,KeyExchange)(THIS_ GUID*,BYTE**,DWORD*) PURE;
+                                                             ^
+c:\mingw\include\strmif.h:1150:21: error: 'ProtectionCommand' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,ProtectionCommand)(THIS_ const AMCOPPCommand*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1150:46: error: expected ')' before 'const'
+  STDMETHOD_(HRESULT,ProtectionCommand)(THIS_ const AMCOPPCommand*) PURE;
+                                              ^
+c:\mingw\include\strmif.h:1150:68: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,ProtectionCommand)(THIS_ const AMCOPPCommand*) PURE;
+                                                                    ^
+c:\mingw\include\strmif.h:1151:21: error: 'ProtectionStatus' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,ProtectionStatus)(THIS_ const AMCOPPStatusInput*,AMCOPPStatusOutput*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1151:45: error: expected ')' before 'const'
+  STDMETHOD_(HRESULT,ProtectionStatus)(THIS_ const AMCOPPStatusInput*,AMCOPPStatusOutput*) PURE;
+                                             ^
+c:\mingw\include\strmif.h:1151:91: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,ProtectionStatus)(THIS_ const AMCOPPStatusInput*,AMCOPPStatusOutput*) PURE;
+                                                                                           ^
+c:\mingw\include\strmif.h:1152:21: error: 'SessionSequenceStart' undeclared (first use in this function)
+  STDMETHOD_(HRESULT,SessionSequenceStart)(THIS_ const AMCOPPSignature*) PURE;
+                     ^
+c:\mingw\include\strmif.h:1152:49: error: expected ')' before 'const'
+  STDMETHOD_(HRESULT,SessionSequenceStart)(THIS_ const AMCOPPSignature*) PURE;
+                                                 ^
+c:\mingw\include\strmif.h:1152:73: error: expected ';' before 'PURE'
+  STDMETHOD_(HRESULT,SessionSequenceStart)(THIS_ const AMCOPPSignature*) PURE;
+                                                                         ^
+In file included from c:\mingw\include\dshow.h:8:0,
+                 from C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:
+c:\mingw\include\amaudio.h: At top level:
+c:\mingw\include\amaudio.h:7:20: fatal error: dsound.h: No such file or directory
+ #include <dsound.h>
+                    ^
+compilation terminated.
+CMakeFiles\cmTC_b665a.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_b665a.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_b665a.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_b665a/fast' failed
+mingw32-make.exe: *** [cmTC_b665a/fast] Error 2
+
+
+Determining if the include file Mfapi.h exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_8b18f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_8b18f.dir\build.make CMakeFiles/cmTC_8b18f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b18f.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_8b18f.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:19: fatal error: Mfapi.h: No such file or directory
+ #include <Mfapi.h>
+                   ^
+compilation terminated.
+CMakeFiles\cmTC_8b18f.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_8b18f.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_8b18f.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_8b18f/fast' failed
+mingw32-make.exe: *** [cmTC_8b18f/fast] Error 2
+
+
+Determining if the include file D3D11.h exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_91e3f/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_91e3f.dir\build.make CMakeFiles/cmTC_91e3f.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91e3f.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_91e3f.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:19: fatal error: D3D11.h: No such file or directory
+ #include <D3D11.h>
+                   ^
+compilation terminated.
+CMakeFiles\cmTC_91e3f.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_91e3f.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_91e3f.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_91e3f/fast' failed
+mingw32-make.exe: *** [cmTC_91e3f/fast] Error 2
+
+
+Determining if the include file D3d11_4.h exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_0c9a9/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_0c9a9.dir\build.make CMakeFiles/cmTC_0c9a9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c9a9.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_0c9a9.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: D3d11_4.h: No such file or directory
+ #include <D3d11_4.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_0c9a9.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_0c9a9.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_0c9a9.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_0c9a9/fast' failed
+mingw32-make.exe: *** [cmTC_0c9a9/fast] Error 2
+
+
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_5521c/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_5521c.dir\build.make CMakeFiles/cmTC_5521c.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5521c.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_5521c.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:21: fatal error: pthread.h: No such file or directory
+ #include <pthread.h>
+                     ^
+compilation terminated.
+CMakeFiles\cmTC_5521c.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_5521c.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_5521c.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_5521c/fast' failed
+mingw32-make.exe: *** [cmTC_5521c/fast] Error 2
+
+
+Build output check failed:
+    Regex: 'command line option .* is valid for .* but not for C\+\+'
+    Output line: 'cc1plus.exe: warning: command line option '-Wno-missing-prototypes' is valid for C/ObjC but not for C++'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-missing-prototypes'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_2b340/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_2b340.dir\build.make CMakeFiles/cmTC_2b340.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b340.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated  -O3 -DNDEBUG   -Wno-missing-prototypes -o CMakeFiles\cmTC_2b340.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+cc1plus.exe: warning: command line option '-Wno-missing-prototypes' is valid for C/ObjC but not for C++
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+Linking CXX executable cmTC_2b340.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2b340.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_2b340.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_2b340.dir/objects.a @CMakeFiles\cmTC_2b340.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_2b340.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2b340.exe -Wl,--out-implib,libcmTC_2b340.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2b340.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-tautological-undefined-compare"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-tautological-undefined-compare'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_56bf9/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_56bf9.dir\build.make CMakeFiles/cmTC_56bf9.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_56bf9.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG   -Wno-tautological-undefined-compare -o CMakeFiles\cmTC_56bf9.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-tautological-undefined-compare"
+Linking CXX executable cmTC_56bf9.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_56bf9.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_56bf9.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_56bf9.dir/objects.a @CMakeFiles\cmTC_56bf9.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_56bf9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_56bf9.exe -Wl,--out-implib,libcmTC_56bf9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_56bf9.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-unused-const-variable"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-unused-const-variable'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_bd217/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_bd217.dir\build.make CMakeFiles/cmTC_bd217.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bd217.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG   -Wno-unused-const-variable -o CMakeFiles\cmTC_bd217.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-unused-const-variable"
+Linking CXX executable cmTC_bd217.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_bd217.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_bd217.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_bd217.dir/objects.a @CMakeFiles\cmTC_bd217.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_bd217.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bd217.exe -Wl,--out-implib,libcmTC_bd217.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bd217.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-shorten-64-to-32"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-shorten-64-to-32'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_4e959/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_4e959.dir\build.make CMakeFiles/cmTC_4e959.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4e959.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG   -Wno-shorten-64-to-32 -o CMakeFiles\cmTC_4e959.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-shorten-64-to-32"
+Linking CXX executable cmTC_4e959.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4e959.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_4e959.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_4e959.dir/objects.a @CMakeFiles\cmTC_4e959.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_4e959.dir/objects.a -Wl,--no-whole-archive  -o cmTC_4e959.exe -Wl,--out-implib,libcmTC_4e959.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_4e959.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Build output check failed:
+    Regex: 'unrecognized .*option'
+    Output line: 'cc1plus.exe: warning: unrecognized command line option "-Wno-enum-compare-switch"'
+Compilation failed:
+    source file: 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp/src.cxx'
+    check option: ' -Wno-enum-compare-switch'
+===== BUILD LOG =====
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_a9572/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_a9572.dir\build.make CMakeFiles/cmTC_a9572.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9572.dir/src.cxx.obj
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-invalid-offsetof  -O3 -DNDEBUG   -Wno-enum-compare-switch -o CMakeFiles\cmTC_a9572.dir\src.cxx.obj -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\src.cxx:1:0: warning: ignoring #pragma   [-Wunknown-pragmas]
+ #pragma
+ ^
+cc1plus.exe: warning: unrecognized command line option "-Wno-enum-compare-switch"
+Linking CXX executable cmTC_a9572.exe
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_a9572.dir\link.txt --verbose=1
+"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_a9572.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_a9572.dir/objects.a @CMakeFiles\cmTC_a9572.dir\objects1.rsp
+C:\MinGW\bin\g++.exe     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security   -Winit-self -Wpointer-arith  -Wuninitialized -Winit-self -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-invalid-offsetof  -O3 -DNDEBUG    -Wl,--gc-sections  -Wl,--whole-archive CMakeFiles\cmTC_a9572.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a9572.exe -Wl,--out-implib,libcmTC_a9572.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a9572.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+
+===== END =====
+
+Determining if the include file Mfapi.h exists failed with the following output:
+Change Dir: C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/MinGW/bin/mingw32-make.exe" "cmTC_e3e8a/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTC_e3e8a.dir\build.make CMakeFiles/cmTC_e3e8a.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3e8a.dir/CheckIncludeFile.c.obj
+C:\MinGW\bin\gcc.exe    -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wuninitialized -Winit-self -Wno-narrowing -Wno-comment -Wno-missing-field-initializers -fdiagnostics-show-option -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -mfpmath=sse -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles\cmTC_e3e8a.dir\CheckIncludeFile.c.obj   -c C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+C:\Users\Tomas\Documents\GitHub\491\panorama\opencv_build\final\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:19: fatal error: Mfapi.h: No such file or directory
+ #include <Mfapi.h>
+                   ^
+compilation terminated.
+CMakeFiles\cmTC_e3e8a.dir\build.make:64: recipe for target 'CMakeFiles/cmTC_e3e8a.dir/CheckIncludeFile.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTC_e3e8a.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/CMakeFiles/CMakeTmp'
+Makefile:125: recipe for target 'cmTC_e3e8a/fast' failed
+mingw32-make.exe: *** [cmTC_e3e8a/fast] Error 2
+
+

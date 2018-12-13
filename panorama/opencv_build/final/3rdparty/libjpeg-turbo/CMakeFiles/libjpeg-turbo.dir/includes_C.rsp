@@ -1,0 +1,1 @@
+-isystem C:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final -IC:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/final/3rdparty/libjpeg-turbo -IC:/Users/Tomas/Documents/GitHub/491/panorama/opencv_build/opencv/3rdparty/libjpeg-turbo/src 
